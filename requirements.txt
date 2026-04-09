@@ -1,0 +1,3 @@
+xarray
+matplotlib
+numpy
