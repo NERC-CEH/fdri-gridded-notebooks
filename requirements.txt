@@ -3,3 +3,6 @@ matplotlib
 numpy
 zarr
 s3fs
+xoak
+cartopy
+netcdf4
