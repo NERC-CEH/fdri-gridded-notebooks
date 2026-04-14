@@ -7,3 +7,4 @@ xoak
 cartopy
 netcdf4
 geopandas
+rasterio
