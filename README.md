@@ -25,14 +25,25 @@ A catalog of datasets can be found in the [Catalog](#Catalog) section.
 Click the "Launch Binder" button at the top of the notebook or at the top of this README. Please note that it may take a few minutes to load the environment. If you used the button at the top of the README, you can select the notebook you wish to run from the file-navigator in the left side panel. If you clicked the button from a notebook, it will open on the notebook automatically.
 
 ### Local Machine
-You can also run these notebooks on your local machine (laptop or desktop) but this is slightly more involved, and will depend on the operating system of your machine. They can be run on Windows, but Linux (or MacOS in a pinch) are preferred. You will most likely require Admin/Superuser/root permissions. Various methods for running the notebooks are outlined below, but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
+You can also run these notebooks on your local machine (laptop or desktop) but this is slightly more involved, and will depend on the operating system of your machine. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. You will most likely require Admin/Superuser/root permissions. Two methods for running the notebooks are outlined below, but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
 
-#### Windows with VS-Code
+#### The Graphical Point-and-Click option: Using VS-Code
 - Download the repository by clicking the green '\<\> Code' button, top right on the repository [main page](https://github.com/NERC-CEH/fdri-gridded-notebooks) and then selecting 'Download ZIP' at the bottom of the menu that appears.
 - Navigate to where the ZIP file downloaded and unzip them (right click, followed by "Extract All" or similar should do the job).
-- Download and install VS-Code if it is not already installed on your machine
+- [Download and install VS-Code](https://code.visualstudio.com/) if it is not already installed on your machine
+- [Download and install Python](https://www.python.org/downloads/) if you don't already have it on your machine, making sure you  check the "Add Python to PATH" box during installation (on Windows only).
+- Open VS Code and go to the Extensions panel (Ctrl+Shift+X)
+- Search for and install "Python" if it is not already installed
+- Open the folder containing the notebooks that you downloaded and extracted earlier (File -> Open Folder, or Ctrl+K+O)
+- You'll need to "Trust the authors" if you get a notice about that when you open the folder
+- Select the notebook you want to run from the file explorer side panel on the left
+- Click 'Select Kernel' near the top right of the window, then '+ Create Python Environment' followed by 'Venv' in the menu that appears
+- Still in the same menu, select a python interpreter. If you just installed Python following this guide, that should show up as the one option in the menu, otherwise you can use an existing/other python installation
+- Then finally you'll be asked to select dependencies to install. The requirements.txt file in the folder should show up as an option. Select this and press 'OK'. This will install the necessary python packages onto your system. It'll likely take a few minutes.
+- You should now be able to run and use the notebook 
 
-#### Linux with UV or Conda
+#### The Shell/Command-Line option: Using UV or Conda
+- This works best with Linux or MacOS machines which have a built-in bash shell/terminal. The equivalent in Windows is the Command Line, but there are some differences.
 
 
 
