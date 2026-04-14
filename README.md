@@ -14,22 +14,32 @@ A catalog of datasets can be found in the [Catalog](#Catalog) section.
 ## Python
 
 ### Google Colab
-Each notebook includes an install cell at the top. Run it to install dependencies. 
+**Google Account required**
+- Click the "Launch in Colab" button at the top of the notebook.
+- Sign in to your google account if needed (blue "Sign in" button in the top right)
+- Each notebook includes a cell near the top for installing extra packages not available in the default Colab environment. Run it to install these.
+
+**Note:** Changes you make to the notebook will not be saved by default. If you wish to save your changes, click the "Copy to Drive" text just below the menu bar at the top of the screen. This will create a separate copy of the notebook in your Google Drive and any edits you make will be saved to it.
+
+### Binder
+Click the "Launch Binder" button at the top of the notebook or at the top of this README. Please note that it may take a few minutes to load the environment. If you used the button at the top of the README, you can select the notebook you wish to run from the file-navigator in the left side panel. If you clicked the button from a notebook, it will open on the notebook automatically.
+
+### Local Machine
+You can also run these notebooks on your local machine (laptop or desktop) but this is slightly more involved, and will depend on the operating system of your machine. They can be run on Windows, but Linux (or MacOS in a pinch) are preferred. You will most likely require Admin/Superuser/root permissions. Various methods for running the notebooks are outlined below, but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
+
+#### Windows with VS-Code
+- Download the repository by clicking the green '\<\> Code' button, top right on the repository [main page](https://github.com/NERC-CEH/fdri-gridded-notebooks) and then selecting 'Download ZIP' at the bottom of the menu that appears.
+- Navigate to where the ZIP file downloaded and unzip them (right click, followed by "Extract All" or similar should do the job).
+- Download and install VS-Code if it is not already installed on your machine
+
+#### Linux with UV or Conda
 
 
-### JupyterLite
 
-
+### JASMIN Notebook Service
 
 
 ## R
-
-
-
-# Catalog
-
-|Dataset|Format|Time res|Spatial res|Temporal range|Spatial extent|Link|
-|-------|------|--------|-----------|--------------|--------------|----|
 
 
 # Guidelines for content
@@ -46,19 +56,15 @@ Each notebook includes an install cell at the top. Run it to install dependencie
 - [ ] Need an FDRI GitHub repo for this
 
 ## Dataset notebooks
-- [ ] Add CEH-GEAR Zarr
-- [ ] Add CHESS-met NetCDF
-- [ ] Add CHESS-met Zarr
-- [ ] Add HadUK-Grid NetCDF
-- [ ] Add Met Office UKV 2km precipitation
-- [ ] Add ERA5 NetCDF
-- [ ] Add ERA5 Zarr
+- [x] Add CEH-GEAR Zarr
+- [ ] Add CEH-GEAR NetCDF
+
 
 
 ## Supporting pages
-- [ ] Add introductory page on data formats: NetCDF and Zaff incl object store
+- [ ] Add introductory page on data formats: NetCDF and Zarr incl object store
 - [ ] Add a Python page on packages and links
-- [ ]  Add a R page on packages and links
+- [ ] Add a R page on packages and links
 
 
 
