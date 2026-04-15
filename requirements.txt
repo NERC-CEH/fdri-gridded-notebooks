@@ -8,3 +8,5 @@ cartopy
 netcdf4
 geopandas
 rasterio
+jupyter
+ipykernel
