@@ -42,15 +42,15 @@ You can also run these notebooks on your local machine (laptop or desktop) but t
 - Then finally you'll be asked to select dependencies to install. The requirements.txt file in the folder should show up as an option. Select this and press 'OK'. This will install the necessary python packages onto your system. It'll likely take a few minutes.
 - After this completes you should now be able to run and use the notebook 
 
-#### The Shell/Command-Line option: Using UV or Conda
+#### The Shell/Command-Line option: Using UV
 - This method assumes basic knowledge of bash/shell/command-lines. It works best with Linux or MacOS machines which have a built-in bash shell/terminal. The equivalent in Windows is the Command Line, but there are some differences.
 - If on Windows, [download and install Visual Studio Build Tools for C+](visualstudio.microsoft.com/visual-cpp-build-tools), selecting "Desktop Development with C++" when the installer shows up. 
 - Open a shell and navigate to the folder you would like to download the code to using the '''cd''' command
 - Obtain a copy of the code using ```curl -L https://github.com/NERC-CEH/fdri-gridded-notebooks/archive/refs/heads/main.zip --output fdri-notebooks.zip```
 - Extract the notebooks from the zip file with ```tar -xf fdri-notebooks.zip``` or ```unzip fdri-notebooks.zip``` and navigate into the extracted folder (```cd fdri-gridded-notebooks-main```)
 - [Install UV](docs.astral.sh/uv/getting-started/installation) following their instructions
-- If python is not already installed on your system, install it using uv: ```uv python install```
-- Create a python virtual environment in which to install the packages required by the notebooks with ```uv venv```
+- If Python is not already installed on your system, install it using uv: ```uv python install```
+- Create a Python virtual environment in which to install the packages required by the notebooks with ```uv venv```
 - Activate the virtual environment with ```.venv\Scripts\Activate``` (Windows) ```source .venv/bin/activate``` (Linux)
 - Install the required packages with ```uv pip install -r requirements.txt```
 - Run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web brower's address bar. 
