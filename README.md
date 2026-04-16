@@ -2,16 +2,17 @@
 As part of the UK Government funded Floods and Droughts Research Infrastructure (FDRI) project, we are improving access to gridded time series datasets related to hydrological studies e.g. meteorological driving data for hydrological models. We are looking to help a wide range of users access and use gridded time series datasets in NetCDF and object store formats using Python and R notebooks.
 
 # Audience
-We are looking to improve the accessibility of gridded time series dataasets to a wide range of users, with an initial focus on those with lower levels of technical expertise and confidence in exploring and using these datasets. Python and R are the two main programming languages that our hydrological community are familiar with to explore and use datasets like these. 
+We are looking to improve the accessibility of gridded time series datasets to a wide range of users, with an initial focus on those with lower levels of technical expertise and confidence in exploring and using these datasets. Python and R are the two main programming languages that our hydrological community are familiar with to explore and use datasets like these. 
 
 ## Improving accessibility of datasets 
 As part of a series of user engagements we are holding a two hour session in April 2026 to better understanding user needs for access to gridded time series data. These resources including notebooks are a starting point to improve dataset accessibility. 
 
 # Getting started
-As our work progresses we will add a range of ways that you can run these notebooks depending on your particular situation, expertise, and needs. Below there is brief guidance on using these notebooks using [Python](#Python) and [R](#R). Further guidance is provided on the Python and R notebook deep dive pages. 
+As our work progresses we will add a range of ways that you can run these notebooks depending on your particular situation, expertise, and needs. Below there is brief guidance on using these notebooks using [Python](#Python) and [R](#R). 
 A catalog of datasets can be found in the [Catalog](#Catalog) section.
 
 ## Python
+There are range of ways to run notebooks. These vary from running on your local computer to running on an external computer/server. The latter vary in terms of the compute and storage i.e. performance provided for free. In general the compute resources increase from Binder, to Google Coalab, to the JASMIN Notebook Service. 
 
 ### Google Colab
 **Google Account required**
