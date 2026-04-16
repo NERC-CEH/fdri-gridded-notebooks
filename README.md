@@ -22,7 +22,7 @@ There are range of ways to run notebooks. You can run them on your local compute
 ### Binder
 Click the "Launch Binder" button at the top of the notebook. Please note that it may take a few minutes to load the environment. After the environment as loaded the notebook will appear and you will be able to run it. 
 
-**Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when use the Binder service.
+**Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
 ### Local Machine
 You can also run these notebooks on your local machine (laptop or desktop) but this is slightly more involved, and will depend on the operating system of your machine. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. You will most likely require Admin/Superuser/root permissions, depending on what is already installed on your machine. Two methods for running the notebooks are outlined below, but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
