@@ -38,9 +38,9 @@ You can also run these notebooks on your local machine (laptop or desktop) but t
 - You'll need to "Trust the authors" if you get a notice about that when you open the folder
 - Select the notebook you want to run from the file explorer side panel on the left
 - Click 'Select Kernel' near the top right of the window, then '+ Create Python Environment' followed by 'Venv' in the menu that appears
-- Still in the same menu, select a python interpreter. If you just installed Python following this guide, that should show up as the one option in the menu, otherwise you can use an existing/other python installation
+- Still in the same menu, select a Python interpreter. If you just installed Python following this guide, that should show up as the one option in the menu, otherwise you can use an existing/other python installation
 - Then finally you'll be asked to select dependencies to install. The requirements.txt file in the folder should show up as an option. Select this and press 'OK'. This will install the necessary python packages onto your system. It'll likely take a few minutes.
-- You should now be able to run and use the notebook 
+- After this completes you should now be able to run and use the notebook 
 
 #### The Shell/Command-Line option: Using UV or Conda
 - This method assumes basic knowledge of bash/shell/command-lines. It works best with Linux or MacOS machines which have a built-in bash shell/terminal. The equivalent in Windows is the Command Line, but there are some differences.
