@@ -1,0 +1,9 @@
+libblosc-dev
+libnetcdf-dev
+libhdf5-dev
+libudunits2-dev
+libabsl-dev
+libgdal-dev
+libgeos-dev
+libproj-dev
+libsqlite3-dev
