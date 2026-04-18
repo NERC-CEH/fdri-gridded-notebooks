@@ -31,7 +31,7 @@ You can also run these notebooks on your local machine (laptop or desktop) but t
 - Download the repository by clicking the green '\<\> Code' button, top right on the repository [main page](https://github.com/NERC-CEH/fdri-gridded-notebooks) and then selecting 'Download ZIP' at the bottom of the menu that appears.
 - Navigate to where the ZIP file downloaded and unzip them (right click, followed by "Extract All" or similar should do the job).
 - [Download and install VS-Code](https://code.visualstudio.com/) if it is not already installed on your machine
-- [Download and install Python](https://www.python.org/downloads/) if you don't already have it on your machine, making sure you  check the "Add Python to PATH" box during installation (on Windows only).
+- [Download and install Python](https://www.python.org/downloads/) if you don't already have it on your machine. The "standalone installer" is recommended for Windows, and make sure you check the "Add Python to PATH" box during installation.
 - Open VS Code and go to the Extensions panel (Ctrl+Shift+X)
 - Search for and install "Python" if it is not already installed
 - Open the folder containing the notebooks that you downloaded and extracted earlier (File -> Open Folder, or Ctrl+K+O)
