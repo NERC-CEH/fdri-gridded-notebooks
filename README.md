@@ -25,7 +25,7 @@ Click the "Launch Binder" button at the top of the notebook. Please note that it
 **Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
 ### Local Machine
-You can also run these notebooks on your local machine (laptop or desktop) but this is slightly more involved, and will depend on the operating system of your machine. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. You will most likely require Admin/Superuser/root permissions, depending on what is already installed on your machine. Two methods for running the notebooks are outlined below, but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
+You can also run these notebooks on your local machine (laptop or desktop) but this is slightly more involved, and will depend on the operating system of your machine. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. You will most likely require Admin/Superuser/root permissions, depending on what is already installed on your machine. You may also run into memory issues if your machine doesn't have much enough RAM. Two methods for running the notebooks are outlined below, but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
 
 #### The Graphical Point-and-Click option: Using VS-Code
 - Download the repository by clicking the green '\<\> Code' button, top right on the repository [main page](https://github.com/NERC-CEH/fdri-gridded-notebooks) and then selecting 'Download ZIP' at the bottom of the menu that appears.
@@ -72,23 +72,26 @@ Click the "Launch Binder" button at the top of the notebook. Please note that it
 
 **Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
+### Local Machine
+You can also run these notebooks on your local machine (laptop or desktop) but this is slightly more involved, and will depend on the operating system of your machine. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. You will most likely require Admin/Superuser/root permissions, depending on what is already installed on your machine. You may also run into memory issues if your machine doesn't have much enough RAM. Two methods for running the notebooks are outlined below, but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
+
 #### The Graphical Point-and-Click option: Using VS-Code
 - Download the repository by clicking the green '\<\> Code' button, top right on the repository [main page](https://github.com/NERC-CEH/fdri-gridded-notebooks) and then selecting 'Download ZIP' at the bottom of the menu that appears.
 - Navigate to where the ZIP file downloaded and unzip them (right click, followed by "Extract All" or similar should do the job).
 - [Download and install VS-Code](https://code.visualstudio.com/) if it is not already installed on your machine
 - [Download and install R](https://cran.r-project.org/bin/windows/base/) if you don't already have it on your machine
-- [Download and install Python](https://www.python.org/downloads/) if you don't already have it on your machine, making sure you  check the "Add Python to PATH" box during installation (on Windows only).
+- [Download and install miniforge](https://github.com/conda-forge/miniforge#install) (a Python distribution), making sure to tick the "Add installation to my PATH environment variable" and "Register Miniforge3 as my default Python 3.13" boxes when they appear in the installer
+- When installed, open the "Miniforge prompt" application and type in the following command: ```conda install jupyter``` and press Enter to run it  
 - Open VS Code and go to the Extensions panel (Ctrl+Shift+X)
 - Search for and install "R" if it is not already installed
-- Search for and install "Jupyter" if it is not already installed
-- In the bottom right click the bit that says 'R: (not attached)'. This opens up an R terminal prompt.
-- Run the following two commands: ```install.packages('IRkernel')``` and ```IRkernel::installspec() ```
+- Search for and install "Python" if it is not already installed
 - Open the folder containing the notebooks that you downloaded and extracted earlier (File -> Open Folder, or Ctrl+K+O)
 - You'll need to "Trust the authors" if you get a notice about that when you open the folder
 - Select the notebook you want to run from the file explorer side panel on the left
-- Click 'Select Kernel' near the top right of the window, then '+ Create Python Environment' followed by 'Venv' in the menu that appears
-- Still in the same menu, select a Python interpreter. If you just installed Python following this guide, that should show up as the one option in the menu, otherwise you can use an existing/other python installation
-- Then finally you'll be asked to select dependencies to install. The requirements.txt file in the folder should show up as an option. Select this and press 'OK'. This will install the necessary python packages onto your system. It'll likely take a few minutes.
+- Click 'Select Kernel' near the top right of the window, then select the kernel called 'base' with miniforge3 showing in the path next to it. If you can't see it in the menu, try 'Select another kernel' --> 'Python Environments'
+- In the bottom right click the bit that says 'R: (not attached)'. This opens up an R terminal prompt.
+- Run the following two commands: ```install.packages('IRkernel')``` and ```IRkernel::installspec() ```, then restart VS Code
+- Now you can select an R kernel to run the notebook: Where 'Select Kernel' was should now say something like base (Python...). Click this, then 'Select another kernel' --> 'Jupyter kernel' --> 'R' in the menu that appears
 - After this completes you should now be able to run and use the notebook 
 
 
