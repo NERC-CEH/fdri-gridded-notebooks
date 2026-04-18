@@ -45,7 +45,7 @@ You can also run these notebooks on your local machine (laptop or desktop) but t
 #### The Shell/Command-Line option: Using UV
 - This method assumes basic knowledge of bash/shell/command-lines. It works best with Linux or MacOS machines which have a built-in bash shell/terminal. The equivalent in Windows is the Command Line, but there are some differences.
 - If on Windows, [download and install Visual Studio Build Tools for C+](visualstudio.microsoft.com/visual-cpp-build-tools), selecting "Desktop Development with C++" when the installer shows up. 
-- Open a shell and navigate to the folder you would like to download the code to using the '''cd''' command
+- Open a shell and navigate to the folder you would like to download the code to using the ```cd``` command
 - Obtain a copy of the code using ```curl -L https://github.com/NERC-CEH/fdri-gridded-notebooks/archive/refs/heads/main.zip --output fdri-notebooks.zip```
 - Extract the notebooks from the zip file with ```tar -xf fdri-notebooks.zip``` or ```unzip fdri-notebooks.zip``` and navigate into the extracted folder (```cd fdri-gridded-notebooks-main```)
 - [Install UV](docs.astral.sh/uv/getting-started/installation) following their instructions
