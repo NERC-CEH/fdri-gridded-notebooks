@@ -80,8 +80,8 @@ You can also run these notebooks on your local machine (laptop or desktop) but t
 - Navigate to where the ZIP file downloaded and unzip them (right click, followed by "Extract All" or similar should do the job).
 - [Download and install VS-Code](https://code.visualstudio.com/) if it is not already installed on your machine
 - [Download and install R](https://cran.r-project.org/bin/windows/base/) if you don't already have it on your machine
-- [Download and install miniforge](https://github.com/conda-forge/miniforge#install) (a Python distribution), making sure to tick the "Add installation to my PATH environment variable" and "Register Miniforge3 as my default Python 3.13" boxes when they appear in the installer
-- When installed, open the "Miniforge prompt" application and type in the following command: ```conda install jupyter``` and press Enter to run it  
+- [Download and install miniforge](https://github.com/conda-forge/miniforge#install) (a Python distribution), making sure to tick the "Add installation to my PATH environment variable" and "Register Miniforge3 as my default Python 3.13" boxes when they appear in the installer (Windows only).
+- When installed, open the "Miniforge prompt" application (Windows) or a shell (Linux or MacOS) and type in the following command: ```conda install jupyter``` and press Enter to run it. This installs the Jupyter notebook software. 
 - Open VS Code and go to the Extensions panel (Ctrl+Shift+X)
 - Search for and install "R" if it is not already installed
 - Search for and install "Python" if it is not already installed
@@ -91,15 +91,15 @@ You can also run these notebooks on your local machine (laptop or desktop) but t
 - Click 'Select Kernel' near the top right of the window, then select the kernel called 'base' with miniforge3 showing in the path next to it. If you can't see it in the menu, try 'Select another kernel' --> 'Python Environments'
 - In the bottom right click the bit that says 'R: (not attached)'. This opens up an R terminal prompt.
 - Run the following two commands: ```install.packages('IRkernel')``` and ```IRkernel::installspec() ```, then restart VS Code
-- Now you can select an R kernel to run the notebook: Where 'Select Kernel' was should now say something like base (Python...). Click this, then 'Select another kernel' --> 'Jupyter kernel' --> 'R' in the menu that appears
+- Now you can select an R kernel to run the notebook: Where 'Select Kernel' was should now say something like "base (Python...)". Click this, then 'Select another kernel' --> 'Jupyter kernel' --> 'R' in the menu that appears
 - After this completes you should now be able to run and use the notebook 
 
 #### The Shell/Command-Line option: Using UV
 - This method assumes basic knowledge of bash/shell/command-lines. It works best with Linux or MacOS machines which have a built-in bash shell/terminal. The equivalent in Windows is the Command Line, but there are some differences.
 - If on Windows, [download and install Visual Studio Build Tools for C+](visualstudio.microsoft.com/visual-cpp-build-tools), selecting "Desktop Development with C++" when the installer shows up.
 - [Download and install R](https://cran.r-project.org/bin/windows/base/) if you don't already have it on your machine
-- [Download and install miniforge](https://github.com/conda-forge/miniforge#install) (a Python distribution), making sure to tick the "Add installation to my PATH environment variable" and "Register Miniforge3 as my default Python 3.13" boxes when they appear in the installer
-- Open a shell and navigate to the folder you would like to download the code to using the '''cd''' command
+- [Download and install miniforge](https://github.com/conda-forge/miniforge#install) (a Python distribution). The standalone installer is recommended for Windows, and make sure to tick the "Add installation to my PATH environment variable" and "Register Miniforge3 as my default Python 3.13" boxes when they appear in the installer
+- Open a shell and navigate to the folder you would like to download the code to using the ```cd``` command
 - Obtain a copy of the code using ```curl -L https://github.com/NERC-CEH/fdri-gridded-notebooks/archive/refs/heads/main.zip --output fdri-notebooks.zip```
 - Extract the notebooks from the zip file with ```tar -xf fdri-notebooks.zip``` or ```unzip fdri-notebooks.zip``` and navigate into the extracted folder (```cd fdri-gridded-notebooks-main```)
 - Run the command ```conda install jupyter``` to install the notebook software
