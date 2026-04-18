@@ -20,7 +20,7 @@ There are range of ways to run notebooks. You can run them on your local compute
 **Note:** Changes you make to the notebook will not be saved by default. If you wish to save your changes, click the "Copy to Drive" text just below the menu bar at the top of the screen. This will create a separate copy of the notebook in your Google Drive and any edits you make will be saved to it.
 
 ### Binder
-Click the "Launch Binder" button at the top of the notebook. Please note that it may take a few minutes to load the environment. After the environment as loaded the notebook will appear and you will be able to run it. 
+Click the "Launch Binder" button at the top of the notebook. Please note that it may take a few minutes to load the environment. After the environment has loaded the notebook will appear and you will be able to run it. 
 
 **Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
@@ -62,14 +62,34 @@ You can also run these notebooks on your local machine (laptop or desktop) but t
 **Google Account required**
 - Click the "Launch in Colab" button at the top of the notebook.
 - Sign in to your google account if needed (blue "Sign in" button in the top right)
-- Look for the "Connect" writing near the top right of the screen. Click the drop down arrow next to it, then "Change runtime type" in the menu that appears
-- This will open up a dialogue box. In the top drop-down menu box ("Runtime type"), select R, then save
+- Click the "Runtime" menu in the menu bar at the top of the screen, select Change runtime type, select R from the 'Runtime type' drop down box
 - Each notebook includes a couple of cells near the top for installing extra packages not available in the default Colab environment. Run these to install them but note that it will take at least 10 minutes due to limited compute on the free tier of Colab.
 
 **Note:** Changes you make to the notebook will not be saved by default. If you wish to save your changes, click the "Copy to Drive" text just below the menu bar at the top of the screen. This will create a separate copy of the notebook in your Google Drive and any edits you make will be saved to it.
 
+### Binder
+Click the "Launch Binder" button at the top of the notebook. Please note that it may take several minutes to load the environment. After the environment has loaded the notebook will appear and you will be able to run it. 
 
+**Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
+#### The Graphical Point-and-Click option: Using VS-Code
+- Download the repository by clicking the green '\<\> Code' button, top right on the repository [main page](https://github.com/NERC-CEH/fdri-gridded-notebooks) and then selecting 'Download ZIP' at the bottom of the menu that appears.
+- Navigate to where the ZIP file downloaded and unzip them (right click, followed by "Extract All" or similar should do the job).
+- [Download and install VS-Code](https://code.visualstudio.com/) if it is not already installed on your machine
+- [Download and install R](https://cran.r-project.org/bin/windows/base/) if you don't already have it on your machine
+- [Download and install Python](https://www.python.org/downloads/) if you don't already have it on your machine, making sure you  check the "Add Python to PATH" box during installation (on Windows only).
+- Open VS Code and go to the Extensions panel (Ctrl+Shift+X)
+- Search for and install "R" if it is not already installed
+- Search for and install "Jupyter" if it is not already installed
+- In the bottom right click the bit that says 'R: (not attached)'. This opens up an R terminal prompt.
+- Run the following two commands: ```install.packages('IRkernel')``` and ```IRkernel::installspec() ```
+- Open the folder containing the notebooks that you downloaded and extracted earlier (File -> Open Folder, or Ctrl+K+O)
+- You'll need to "Trust the authors" if you get a notice about that when you open the folder
+- Select the notebook you want to run from the file explorer side panel on the left
+- Click 'Select Kernel' near the top right of the window, then '+ Create Python Environment' followed by 'Venv' in the menu that appears
+- Still in the same menu, select a Python interpreter. If you just installed Python following this guide, that should show up as the one option in the menu, otherwise you can use an existing/other python installation
+- Then finally you'll be asked to select dependencies to install. The requirements.txt file in the folder should show up as an option. Select this and press 'OK'. This will install the necessary python packages onto your system. It'll likely take a few minutes.
+- After this completes you should now be able to run and use the notebook 
 
 
 
