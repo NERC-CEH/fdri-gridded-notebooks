@@ -1,13 +1,19 @@
 # FDRI Gridded Data Access Notebooks
 As part of the UK Government funded Floods and Droughts Research Infrastructure (FDRI) project, we are improving access to gridded time series datasets related to hydrological studies e.g. meteorological driving data for hydrological models. We are looking to help a wide range of users access and use gridded time series datasets in NetCDF and object store formats using Python and R notebooks.
 
-## Improving accessibility of datasets 
-As part of a series of user engagements we are holding a two hour session in April 2026 to better understanding user needs for access to gridded time series data. These resources including notebooks are a starting point to improve dataset accessibility. 
+As part of a series of user engagements we are holding a two hour session in April 2026 to better understanding user needs for access to gridded time series data. The notebooks in this repository are a starting point for improving dataset accessibility. 
+
+As our work progresses we will add a range of ways that you can run these notebooks depending on your particular situation, expertise, and needs, according to user feedback. We intend to have a set of notebooks for each dataset released under the FDRI project. At the moment we are providing notebooks for [CEH-GEAR-1hr](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f), a gridded rainfall dataset.
 
 # Getting started
-As our work progresses we will add a range of ways that you can run these notebooks depending on your particular situation, expertise, and needs. 
 
-There are range of ways to run notebooks. Here we provide easy ways to get started with them using Google Colab or Binder with minimal setup required. Instructions are below. We also provide instructions for running these notebooks on your local machine, but this is much more complicated and only for advanced users.
+There are range of ways to run notebooks. Here we provide easy ways to get started with them using Google Colab or Binder with minimal setup required. Instructions are below, along with links to the notebooks. We also provide instructions for running these notebooks on your local machine, but this is much more complicated and only for advanced users.
+
+| Dataset | Python | R |
+| ------- | ------ | - |
+| CEH-GEAR-1hr (Zarr version) | [gear_zarr_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_zarr_python.ipynb) | [gear_zarr_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_zarr_R.ipynb) |
+| CEH-GEAR-1hr (NetCDF version) | [gear_netcdf_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_netcdf_python.ipynb) | [gear_netcdf_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_netcdf_R.ipynb) |
+
 
 ## Python
 
