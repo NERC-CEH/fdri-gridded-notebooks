@@ -24,8 +24,13 @@ Click the "Launch Binder" button at the top of the notebook. Please note that it
 
 **Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
+<details>
+<summary>
+  
 ### Local Machine
-You can also run these notebooks on your local machine (laptop or desktop) but this is much more involved, and will depend on the operating system of your machine. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. You will most likely require Admin/Superuser/root permissions, depending on what is already installed on your machine. You may also run into memory issues if your machine doesn't have enough RAM. Two methods for running the notebooks are outlined below, but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
+You can also run these notebooks on your local machine (laptop or desktop) but this is much more involved, and only recommended for advanced users. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. Two methods for running the notebooks are outlined below (click to expand) but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
+</summary>  
+You will most likely require Admin/Superuser/root permissions, depending on what is already installed on your machine. You may also run into memory issues if your machine doesn't have enough RAM.
 
 #### The Graphical Point-and-Click option: Using VS-Code
 - Download the repository by clicking the green '\<\> Code' button, top right on the repository [main page](https://github.com/NERC-CEH/fdri-gridded-notebooks) and then selecting 'Download ZIP' at the bottom of the menu that appears.
@@ -54,6 +59,7 @@ You can also run these notebooks on your local machine (laptop or desktop) but t
 - Activate the virtual environment with ```.venv\Scripts\Activate``` (Windows) ```source .venv/bin/activate``` (Linux)
 - Install the required packages with ```uv pip install -r requirements.txt```
 - Run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web brower's address bar. 
+</details>
 
 ## R
 
@@ -72,9 +78,13 @@ Click the "Launch Binder" button at the top of the notebook. Please note that it
 
 **Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
+<details>
+<summary>
+  
 ### Local Machine
-You can also run these notebooks on your local machine (laptop or desktop) but this is slightly more involved, and will depend on the operating system of your machine. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. You will most likely require Admin/Superuser/root permissions, depending on what is already installed on your machine. You may also run into memory issues if your machine doesn't have enough RAM. Two methods for running the notebooks are outlined below, but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
-
+You can also run these notebooks on your local machine (laptop or desktop) but this is much more involved, and only recommended for advanced users. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. Two methods for running the notebooks are outlined below (click to expand) but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
+</summary>  
+You will most likely require Admin/Superuser/root permissions, depending on what is already installed on your machine. You may also run into memory issues if your machine doesn't have enough RAM.
 #### The Graphical Point-and-Click option: Using VS-Code
 - Download the repository by clicking the green '\<\> Code' button, top right on the repository [main page](https://github.com/NERC-CEH/fdri-gridded-notebooks) and then selecting 'Download ZIP' at the bottom of the menu that appears.
 - Navigate to where the ZIP file downloaded and unzip them (right click, followed by "Extract All" or similar should do the job).
@@ -106,6 +116,7 @@ You can also run these notebooks on your local machine (laptop or desktop) but t
 - Open R, and run ```install.packages('IRkernel')``` and ```IRkernel::installspec()```
 - Back in the shell, run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web brower's address bar.
 - It should open with an R kernel automatically. Check that it says 'R' next to an unfilled circle near the top right. If it says Python or something else, click on it and select 'R' from the menu box that appears.
+</details>
 
 
 
