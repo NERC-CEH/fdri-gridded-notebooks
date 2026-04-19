@@ -14,8 +14,8 @@ There are range of ways to run notebooks. Here we provide easy ways to get start
 
 | Dataset | Python Notebook | R Notebook |
 | ------- | --------------- | ---------- |
-| CEH-GEAR-1hr (Zarr version) | [gear_zarr_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_zarr_python.ipynb) | [gear_zarr_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_zarr_R.ipynb) |
-| CEH-GEAR-1hr (NetCDF version) | [gear_netcdf_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_netcdf_python.ipynb) | [gear_netcdf_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_netcdf_R.ipynb) |
+| CEH-GEAR-1hr (Zarr version) | [gear_zarr_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_zarr_python.ipynb) | [gear_zarr_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_zarr_R.ipynb) |
+| CEH-GEAR-1hr (NetCDF version) | [gear_netcdf_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_netcdf_python.ipynb) | [gear_netcdf_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_netcdf_R.ipynb) |
 
 
 ## Python
