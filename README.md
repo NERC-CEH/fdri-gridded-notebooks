@@ -9,8 +9,8 @@ As our work progresses we will add a range of ways that you can run these notebo
 
 There are range of ways to run notebooks. Here we provide easy ways to get started with them using Google Colab or Binder with minimal setup required. Instructions are below, along with links to the notebooks. We also provide instructions for running these notebooks on your local machine, but this is much more complicated and only for advanced users.
 
-| Dataset | Python | R |
-| ------- | ------ | - |
+| Dataset | Python Notebook | R Notebook |
+| ------- | --------------- | ---------- |
 | CEH-GEAR-1hr (Zarr version) | [gear_zarr_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_zarr_python.ipynb) | [gear_zarr_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_zarr_R.ipynb) |
 | CEH-GEAR-1hr (NetCDF version) | [gear_netcdf_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_netcdf_python.ipynb) | [gear_netcdf_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/gear_netcdf_R.ipynb) |
 
