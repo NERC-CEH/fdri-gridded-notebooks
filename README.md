@@ -1,5 +1,5 @@
 # FDRI Gridded Data Access Notebooks
-As part of the UK Government funded Floods and Droughts Research Infrastructure (FDRI) project, we are improving access to gridded time series datasets related to hydrological studies e.g. meteorological driving data for hydrological models. We are looking to help a wide range of users access and use gridded time series datasets in NetCDF and object store formats using Python and R notebooks.
+As part of the UK Government funded [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/) project, we are improving access to gridded time series datasets related to hydrological studies e.g. meteorological driving data for hydrological models. We are looking to help a wide range of users access and use gridded time series datasets in NetCDF and object store formats using Python and R notebooks.
 
 As part of a series of user engagements we are holding a two hour session in April 2026 to better understanding user needs for access to gridded time series data. The notebooks in this repository are a starting point for improving dataset accessibility. 
 
@@ -7,7 +7,7 @@ As our work progresses we will add a range of ways that you can run these notebo
 
 # Getting started
 
-There are range of ways to run notebooks. Here we provide easy ways to get started with them using Google Colab or Binder with minimal setup required. Instructions are below, along with links to the notebooks. We also provide instructions for running these notebooks on your local machine, but this is much more complicated and only for advanced users.
+There are range of ways to run notebooks. Here we provide easy ways to get started with them using [Google Colab](https://developers.google.com/colab) or [Binder](https://mybinder.org/) with minimal setup required. Instructions are below, along with links to the notebooks. We also provide instructions for running these notebooks on your local machine, but this is much more complicated and only for advanced users.
 
 | Dataset | Python Notebook | R Notebook |
 | ------- | --------------- | ---------- |
@@ -26,7 +26,7 @@ There are range of ways to run notebooks. Here we provide easy ways to get start
 **Note:** Changes you make to the notebook will not be saved by default. If you wish to save your changes, click the "Copy to Drive" text just below the menu bar at the top of the screen. This will create a separate copy of the notebook in your Google Drive and any edits you make will be saved to it.
 
 ### Binder
-Click the "Launch Binder" button at the top of the notebook. Please note that it may take a few minutes to load the environment. After the environment has loaded the notebook will appear and you will be able to run it. 
+Click the "Launch Binder" button at the top of the notebook. Please note that it may take several minutes to load the environment. After the environment has loaded the notebook will appear and you will be able to run it. 
 
 **Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
@@ -64,7 +64,7 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 - Create a Python virtual environment in which to install the packages required by the notebooks with ```uv venv```
 - Activate the virtual environment with ```.venv\Scripts\Activate``` (Windows) ```source .venv/bin/activate``` (Linux)
 - Install the required packages with ```uv pip install -r requirements.txt```
-- Run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web brower's address bar. 
+- Run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web browser. 
 </details>
 
 ## R
@@ -121,7 +121,7 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 - Extract the notebooks from the zip file with ```tar -xf fdri-notebooks.zip``` or ```unzip fdri-notebooks.zip``` and navigate into the extracted folder (```cd fdri-gridded-notebooks-main```)
 - Run the command ```conda install jupyter``` to install the notebook software
 - Open R, and run ```install.packages('IRkernel')``` and ```IRkernel::installspec()```
-- Back in the shell, run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web brower's address bar.
+- Back in the shell, run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web browser.
 - It should open with an R kernel automatically. Check that it says 'R' next to an unfilled circle near the top right. If it says Python or something else, click on it and select 'R' from the menu box that appears.
 </details>
 
