@@ -7,7 +7,7 @@ As part of a series of user engagements we are holding a two hour session in Apr
 # Getting started
 As our work progresses we will add a range of ways that you can run these notebooks depending on your particular situation, expertise, and needs. 
 
-There are range of ways to run notebooks. You can run them on your local computer or on an external computer/server. The latter vary in terms of the compute and storage i.e. performance provided for free. In general the compute resources increase from Binder, to Google Colab, to the JASMIN Notebook Service. Below there is some guidance on using these notebooks for [Python](#Python) and [R](#R) users.
+There are range of ways to run notebooks. Here we provide easy ways to get started with them using Google Colab or Binder with minimal setup required. Instructions are below. We also provide instructions for running these notebooks on your local machine, but this is much more complicated and only for advanced users.
 
 ## Python
 
