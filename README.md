@@ -1,8 +1,7 @@
 # FDRI Gridded Data Access Notebooks 
 
-<img align="left" hspace="10" width="295" height="78" alt="UKCEH_Logo_Master_Black" src="https://github.com/user-attachments/assets/4f123bf5-300a-4ffe-b1ba-b78f1752deee" />
-<img align="left" hspace="10" width="151" height="78" alt="FDRI logo FINAL png" src="https://github.com/user-attachments/assets/aa8f3ecf-24f4-47d3-ada1-a060d800f56a" /> 
-</br></br></br></br></br>
+<img width="309" height="57" alt="UKCEH and FDRI logos" src="https://github.com/user-attachments/assets/04afdc63-663f-41e4-b29d-9419f78d76c3" />
+</br>
 
 **Authors:** [Matt Dalle Piagge](https://mattjbr123.github.io/) and Kit Macleod. With help from: Matt Fry, Mike Brown, Anna Rose Klaptocz, Faiza Samreen, Matt Coole
 
