@@ -102,7 +102,7 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 - Download the repository by clicking the green '\<\> Code' button, top right on the repository [main page](https://github.com/NERC-CEH/fdri-gridded-notebooks) and then selecting 'Download ZIP' at the bottom of the menu that appears.
 - Navigate to where the ZIP file downloaded and unzip them (right click, followed by "Extract All" or similar should do the job).
 - [Download and install VS-Code](https://code.visualstudio.com/) if it is not already installed on your machine. If you get 'Dependency is not satisfied'  errors installing the Linux version, a [potential solution is available](https://github.com/microsoft/vscode/issues/237378#issuecomment-3254132027).
-- [Download and install R](https://cran.r-project.org/bin/windows/base/) if you don't already have it on your machine
+- [Download and install R](https://cran.r-project.org/) if you don't already have it on your machine
 - [Download and install miniforge](https://github.com/conda-forge/miniforge#install) (a Python distribution), making sure to tick the "Add installation to my PATH environment variable" and "Register Miniforge3 as my default Python 3.13" boxes when they appear in the installer (Windows only).
 - When installed, open the "Miniforge prompt" application (Windows) or a shell (Linux or MacOS) and type in the following command: ```conda install jupyter``` and press Enter to run it. This installs the Jupyter notebook software. 
 - Open VS Code and go to the Extensions panel (Ctrl+Shift+X)
