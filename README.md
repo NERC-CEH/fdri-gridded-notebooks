@@ -1,5 +1,9 @@
 # FDRI Gridded Data Access Notebooks 
 
+<img align="left" hspace="10" width="295" height="78" alt="UKCEH_Logo_Master_Black" src="https://github.com/user-attachments/assets/4f123bf5-300a-4ffe-b1ba-b78f1752deee" />
+<img align="left" hspace="10" width="151" height="78" alt="FDRI logo FINAL png" src="https://github.com/user-attachments/assets/aa8f3ecf-24f4-47d3-ada1-a060d800f56a" /> 
+</br></br></br></br></br>
+
 **Authors:** [Matt Dalle Piagge](https://mattjbr123.github.io/) and Kit Macleod. With help from: Matt Fry, Mike Brown, Anna Rose Klaptocz, Faiza Samreen, Matt Coole
 
 As part of the UK Government funded [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/) project, we are improving access to gridded time series datasets related to hydrological studies e.g. meteorological driving data for hydrological models. We are looking to help a wide range of users access and use gridded time series datasets in NetCDF and object store formats using Python and R notebooks.
