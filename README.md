@@ -51,6 +51,7 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 - [Download and install Python](https://www.python.org/downloads/) if you don't already have it on your machine. The "standalone installer" is recommended for Windows, and make sure you check the "Add Python to PATH" box during installation.
 - Open VS Code and go to the Extensions panel (Ctrl+Shift+X)
 - Search for and install "Python" if it is not already installed
+- Search for and install "Jupyter" if it is not already installed
 - Open the folder containing the notebooks that you downloaded and extracted earlier (File -> Open Folder, or Ctrl+K+O)
 - You'll need to "Trust the authors" if you get a notice about that when you open the folder
 - Select the notebook you want to run from the file explorer side panel on the left
@@ -108,6 +109,7 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 - Open VS Code and go to the Extensions panel (Ctrl+Shift+X)
 - Search for and install "R" if it is not already installed
 - Search for and install "Python" if it is not already installed
+- Search for and install "Jupyter" if it is not already installed
 - Open the folder containing the notebooks that you downloaded and extracted earlier (File -> Open Folder, or Ctrl+K+O)
 - You'll need to "Trust the authors" if you get a notice about that when you open the folder
 - Select the notebook you want to run from the file explorer side panel on the left
