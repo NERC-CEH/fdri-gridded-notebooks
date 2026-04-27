@@ -133,7 +133,7 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 - It should open with an R kernel automatically. Check that it says 'R' next to an unfilled circle near the top right. If it says Python or something else, click on it and select 'R' from the menu box that appears.
 
 
-**Note:** You may run in to issues installing the required packages in the Zarr version of the R notebooks on your local machine. The most likely issue is that some dependencies that cannot be installed through R are not present on your system. The dependencies for Linux are listed in the 'apt.txt' file in the repository. Installing these (e.g. using ```apt-get install packagename``` may allow you to proceed. 
+**Note:** You may run in to issues installing the required packages in the Zarr version of the R notebooks on your local machine. The most likely issue is that some dependencies that cannot be installed through R are not present on your system. The dependencies for Linux are listed in the ['apt.txt'](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/apt.txt) file in the repository. Installing these (e.g. using ```apt-get install packagename``` may allow you to proceed. 
 </details>
 
 
