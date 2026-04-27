@@ -131,6 +131,9 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 - Open R, and run ```install.packages('IRkernel')``` and ```IRkernel::installspec()```
 - Back in the shell, run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web browser.
 - It should open with an R kernel automatically. Check that it says 'R' next to an unfilled circle near the top right. If it says Python or something else, click on it and select 'R' from the menu box that appears.
+
+
+**Note:** You may run in to issues installing the required packages in the Zarr version of the R notebooks on your local machine. The most likely issue is that some dependencies that cannot be installed through R are not present on your system. The dependencies for Linux are listed in the 'apt.txt' file in the repository. Installing these (e.g. using ```apt-get install packagename``` may allow you to proceed. 
 </details>
 
 
