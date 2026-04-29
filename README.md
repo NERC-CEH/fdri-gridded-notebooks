@@ -87,7 +87,7 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 **Note:** Changes you make to the notebook will not be saved by default. If you wish to save your changes, click the "Copy to Drive" text just below the menu bar at the top of the screen. This will create a separate copy of the notebook in your Google Drive and any edits you make will be saved to it.
 
 ### Binder
-Click the "Launch Binder" button at the top of the notebook. Please note that it may take several minutes to load the environment. After the environment has loaded the notebook will appear and you will be able to run it. 
+Click the "Launch Binder" button at the top of the notebook. Please note that it may up to half an hour to load the environment, but does not require any further package installs once loaded. After the environment has loaded the notebook will appear and you will be able to run it. 
 
 **Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
