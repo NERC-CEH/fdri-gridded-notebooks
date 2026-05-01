@@ -45,7 +45,7 @@ Click the "Launch Binder" button at the top of the notebook. Please note that it
 - There is no need to run ```conda activate jaspy-version```
 - There is no need to include ```--system-site-packages``` when running ```python -m venv name-of-environment --system-site-packages```
 - For the ```pip install your_package_name``` step, use the requirements.txt file in the repository and run ```pip install -r path/to/requirements.txt```
-- After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and select 'name-of-environment' from the menu that appears.
+- After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and select 'name-of-environment' from the menu that appears. Note that it may take a few minutes to show up.
 - Next time you want to run the notebook (or any R notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
 
 
@@ -114,7 +114,7 @@ JASMIN is a computing and data storage resource and environment for NERC researc
 - Then activate this environment: ```conda activate fdriR``` and install a couple of packages needed for our environment: ```conda install -c conda-forge gcc pkg-config```
 - Then load R (still in the terminal), and install a couple of further packages with ```install.packages(c("blosc", "IRkernel"))```
 - When completed, run ```IRkernel::installspec(name="fdriR", displayname="fdriR")``` to install the kernel (the executable that runs the notebook).
-- Now you can load the notebook you wish to run - find it in the files panel on the left. It should load the fdriR kernel you just created, but in case it doesn't, click the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and select 'fdriR' from the menu that appears.
+- Now you can load the notebook you wish to run - find it in the files panel on the left. It should load the fdriR kernel you just created, but in case it doesn't, click the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and select 'fdriR' from the menu that appears. Note that it may take a few minutes to show up.
 - From here you can run the installation cells in the notebook to install the remainder of the required packages into your environment.
 - Next time you want to run the notebook (or any R notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
 
