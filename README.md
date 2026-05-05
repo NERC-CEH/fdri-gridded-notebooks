@@ -37,7 +37,7 @@ Click the "Launch Binder" button at the top of the notebook. Please note that it
 **Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
 ### JASMIN Notebook Service
-[JASMIN](https://www.jasmin.ac.uk/about/) is a computing and data storage resource and environment for NERC researchers. If you have an account, you can make use of their own notebook service to run these notebooks. The setup is a little more complicated than using Google Colab or Binder but instructions are provided below and on the [JASMIN documentation website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). As JASMIN is also where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times as where you are running the notebooks is physically closer to where the data is stored. 
+[JASMIN](https://www.jasmin.ac.uk/about/) is a computing and data storage resource and environment for NERC researchers. If you have an account, you can make use of their own notebook service to run these notebooks. We are working on simplifying the setup, as it is a little more complicated than using Google Colab or Binder at present. For now, instructions are provided below and on the [JASMIN documentation website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). As JASMIN is also where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times as where you are running the notebooks is physically closer to where the data is stored. 
 
 - Open up the [JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/)
 - Obtain a copy of the notebooks by clicking the 'Git' in the menu bar at the top of the webpage, then 'Clone a Repository'. Tick the 'Download the repository' button, and paste in the link to the repository: https://github.com/NERC-CEH/fdri-gridded-notebooks.git (this can also be obtained by clicking the big green '<> Code' button on the repository main page, clicking 'HTTPS' and copying the link shown).
@@ -46,7 +46,7 @@ Click the "Launch Binder" button at the top of the notebook. Please note that it
 - There is no need to include ```--system-site-packages``` when running ```python -m venv name-of-environment --system-site-packages```
 - For the ```pip install your_package_name``` step, use the requirements.txt file in the repository and run ```pip install -r path/to/requirements.txt```
 - After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and select 'name-of-environment' from the menu that appears. Note that it may take a few minutes to show up.
-- Next time you want to run the notebook (or any R notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
+- Next time you want to run the notebook (or any Python notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
 
 
 <details>
@@ -104,8 +104,8 @@ Click the "Launch Binder" button at the top of the notebook. Please note that it
 
 **Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
-## JASMIN Notebook Service
-JASMIN is a computing and data storage resource and environment for NERC researchers. If you have an account, you can make use of their own notebook service to run these notebooks. The setup is a little more complicated than using Google Colab or Binder but instructions are provided below and the service is [documented on the JASMIN website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). As JASMIN is also where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times as where you are running the notebooks is physically closer to where the data is stored. 
+### JASMIN Notebook Service
+[JASMIN](https://www.jasmin.ac.uk/about/) is a computing and data storage resource and environment for NERC researchers. If you have an account, you can make use of their own notebook service to run these notebooks. We are working on simplifying the setup, as it is a little more complicated than using Google Colab or Binder at present. For now, instructions are provided below and on the [JASMIN documentation website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). As JASMIN is also where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times as where you are running the notebooks is physically closer to where the data is stored. 
 
 - Open up the [JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/)
 - Obtain a copy of the notebooks by clicking the 'Git' in the menu bar at the top of the webpage, then 'Clone a Repository'. Tick the 'Download the repository' button, and paste in the link to the repository: https://github.com/NERC-CEH/fdri-gridded-notebooks.git (this can also be obtained by clicking the big green '<> Code' button on the repository main page, clicking 'HTTPS' and copying the link shown).
