@@ -39,13 +39,13 @@ Click the "Launch Binder" button at the top of the notebook. Please note that it
 ### JASMIN Notebook Service
 [JASMIN](https://www.jasmin.ac.uk/about/) is a computing and data storage resource and environment for NERC researchers. If you have an account, you can make use of their own notebook service to run these notebooks. We are working on simplifying the setup, as it is a little more complicated than using Google Colab or Binder at present. For now, instructions are provided below and on the [JASMIN documentation website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). As JASMIN is also where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times as where you are running the notebooks is physically closer to where the data is stored. 
 
-- Open up the [JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/)
+- You will need to [apply for access to the FDRI Group Workspace](https://accounts.jasmin.ac.uk/services/group_workspaces/fdri/) to be able to use the pre-installed environment for running the notebooks
+- Once access has been granted, open up the [JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/)
 - Obtain a copy of the notebooks by clicking the 'Git' in the menu bar at the top of the webpage, then 'Clone a Repository'. Tick the 'Download the repository' button, and paste in the link to the repository: https://github.com/NERC-CEH/fdri-gridded-notebooks.git (this can also be obtained by clicking the big green '<> Code' button on the repository main page, clicking 'HTTPS' and copying the link shown).
-- Before running the notebooks you'll then need to create the environment containing the packages needed to run the notebooks. JASMIN have [good documentation](https://help.jasmin.ac.uk/docs/software-on-jasmin/python-virtual-environments/#in-the-jasmin-notebook-service) on how to do this, but I found it needed to be adapted a little:
-- There is no need to run ```conda activate jaspy-version```
-- There is no need to include ```--system-site-packages``` when running ```python -m venv name-of-environment --system-site-packages```
-- For the ```pip install your_package_name``` step, use the requirements.txt file in the repository and run ```pip install -r path/to/requirements.txt```
-- After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and select 'name-of-environment' from the menu that appears. Note that it may take a few minutes to show up.
+- The environment for running the notebooks is pre-installed but a couple of steps are required to enable it for running notebooks the first time you use the Notebook Service:
+- Open up a terminal and run ```conda activate /gws/ssde/j25b/fdri/envs/fdricombo``` to activate the environment, then
+- ```python -m ipykernel install --user --name fdricombo``` to install the 'kernel' (the Python executable) to your local user area
+- After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel (called fdricombo) by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and selecting 'fdricombo' from the menu that appears. Note that it may take a few minutes to show up when first installing the kernel. 
 - Next time you want to run the notebook (or any Python notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
 
 
@@ -107,17 +107,13 @@ Click the "Launch Binder" button at the top of the notebook. Please note that it
 ### JASMIN Notebook Service
 [JASMIN](https://www.jasmin.ac.uk/about/) is a computing and data storage resource and environment for NERC researchers. If you have an account, you can make use of their own notebook service to run these notebooks. We are working on simplifying the setup, as it is a little more complicated than using Google Colab or Binder at present. For now, instructions are provided below, with further advice on the [JASMIN documentation website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). As JASMIN is also where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times as where you are running the notebooks is physically closer to where the data is stored. 
 
-- Open up the [JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/)
+- You will need to [apply for access to the FDRI Group Workspace](https://accounts.jasmin.ac.uk/services/group_workspaces/fdri/) to be able to use the pre-installed environment for running the notebooks
+- Once access has been granted, open up the [JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/)
 - Obtain a copy of the notebooks by clicking the 'Git' in the menu bar at the top of the webpage, then 'Clone a Repository'. Tick the 'Download the repository' button, and paste in the link to the repository: https://github.com/NERC-CEH/fdri-gridded-notebooks.git (this can also be obtained by clicking the big green '<> Code' button on the repository main page, clicking 'HTTPS' and copying the link shown).
-- Before running the notebooks you'll then need to create the environment containing the packages needed to run the notebooks. You'll need to use the terminal to do this, which you can access from the notebook service by clicking the big blue button with a '+' symbol on it in the top left, then selecting 'Terminal' in the page that appears, usually at the bottom (you may have to scroll the page to see it). 
-- First, create a copy of the pre-built JASMIN R environment. Run ```conda env list``` to see the existing pre-built environments. You'll want to clone the one that says 'jasR' followed by the latest date you can see. To clone it, run ```conda create --name fdriR --clone jasR-version``` (replacing JasR-version with the name of the environment to clone). 
-- Then activate this environment: ```conda activate fdriR``` and install a couple of packages needed for our environment: ```conda install -c conda-forge gcc pkg-config```
-- Then load R (still in the terminal), and install a couple of further packages with ```install.packages(c("blosc", "IRkernel"))```
-- When completed, run ```IRkernel::installspec(name="fdriR", displayname="fdriR")``` to install the kernel (the executable that runs the notebook).
-- Now you can load the notebook you wish to run - find it in the files panel on the left. It should load the fdriR kernel you just created, but in case it doesn't, click the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and select 'fdriR' from the menu that appears. Note that it may take a few minutes to show up.
-- From here you can run the installation cells in the notebook to install the remainder of the required packages into your environment.
+- Open up a terminal and run ```conda activate /gws/ssde/j25b/fdri/envs/fdricombo``` to activate the environment, then
+- ```python -m ipykernel install --user --name fdricomboR``` to install the 'kernel' (the R executable) to your local user area
+- After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel (called fdricomboR) by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and selecting 'fdricomboR' from the menu that appears. Note that it may take a few minutes to show up when first installing the kernel. 
 - Next time you want to run the notebook (or any R notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
-
 
 <details>
 <summary>
