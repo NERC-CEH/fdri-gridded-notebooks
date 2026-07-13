@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python==3.11
+  - zipp==4.1.0
   - pip
   - pip:
     - xarray==2025.7.1
@@ -15,4 +16,3 @@ dependencies:
     - netcdf4
     - geopandas
     - rasterio
-    - zipp==4.1.0
