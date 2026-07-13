@@ -15,6 +15,7 @@ dependencies:
   - netcdf4
   - geopandas
   - rasterio
+  - proj-data  
   - r-ncdf4
   - r-curl
   - r-ggplot2
