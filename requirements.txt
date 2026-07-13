@@ -1,4 +1,4 @@
-xarray
+xarray >= 2025.7.1
 matplotlib
 numpy
 zarr
