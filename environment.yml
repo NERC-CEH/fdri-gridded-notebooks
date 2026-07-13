@@ -15,3 +15,4 @@ dependencies:
     - netcdf4
     - geopandas
     - rasterio
+    - zipp==4.1.0
