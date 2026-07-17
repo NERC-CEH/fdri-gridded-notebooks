@@ -1,0 +1,30 @@
+name: fdri
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - r-base=4.4
+  - r-irkernel
+  - xarray>=2025.7.1
+  - matplotlib
+  - numpy
+  - zarr
+  - s3fs
+  - xoak
+  - cartopy
+  - netcdf4
+  - geopandas
+  - rasterio
+  - proj-data  
+  - r-ncdf4
+  - r-curl
+  - r-ggplot2
+  - r-dplyr
+  - r-tidyr
+  - r-sf
+  - r-rnaturalearth
+  - r-rnaturalearthdata
+  - r-scales
+  - r-lubridate
+  - r-bit64
+  - r-stars

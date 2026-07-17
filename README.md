@@ -9,7 +9,7 @@ As part of the UK Government funded [Floods and Droughts Research Infrastructure
 
 As part of a series of user engagements we are holding a two hour session in April 2026 to better understanding user needs for access to gridded time series data. The notebooks in this repository are a starting point for improving dataset accessibility. 
 
-As our work progresses we will add a range of ways that you can run these notebooks depending on your particular situation, expertise, and needs, according to user feedback. We intend to have a set of notebooks for each dataset released under the FDRI project. At the moment we are providing notebooks for [CEH-GEAR-1hr](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f), a gridded rainfall dataset.
+As our work progresses we will add a range of ways that you can run these notebooks depending on your particular situation, expertise, and needs, according to user feedback. We intend to have a set of notebooks for each dataset released under the FDRI project. At the moment we are providing notebooks for [CEH-GEAR-1hr](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f), [HadUK-Grid](https://dx.doi.org/10.5285/f02cc6ddd92f45b18b9ab6ab544df7d9) Rainfall (both gridded rainfall datasets), and [Hydro-PE](https://doi.org/10.5285/2aa2c8ab-9e32-4b3b-9636-503912305aca) (a gridded potential evaporation product derived from observations).
 
 # Getting started
 
@@ -19,7 +19,10 @@ There are range of ways to run notebooks. Here we provide easy ways to get start
 | ------- | --------------- | ---------- |
 | CEH-GEAR-1hr (Zarr version) | [gear_zarr_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_zarr_python.ipynb) | [gear_zarr_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_zarr_R.ipynb) |
 | CEH-GEAR-1hr (NetCDF version) | [gear_netcdf_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_netcdf_python.ipynb) | [gear_netcdf_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_netcdf_R.ipynb) |
-
+| HadUK-Grid Rainfall (Zarr version) | [hadukgrid_zarr_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/HadUK-Grid/hadukgrid_zarr_python.ipynb) | [hadukgrid_zarr_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/HadUK-Grid/hadukgrid_zarr_R.ipynb) |
+| HadUK-Grid Rainfall (NetCDF version) | [hadukgrid_netcdf_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/HadUK-Grid/hadukgrid_netcdf_python.ipynb) | [hadukgrid_netcdf_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/HadUK-Grid/hadukgrid_netcdf_R.ipynb) |
+| Hydro-PE (Zarr version) | [hydrope_zarr_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_zarr_python.ipynb) | [hydrope_zarr_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_zarr_R.ipynb) |
+| Hydro-PE (NetCDF version) | [hydrope_netcdf_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_netcdf_python.ipynb) | [hydrope_netcdf_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_netcdf_R.ipynb) |
 
 ## Python
 

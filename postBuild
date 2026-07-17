@@ -1,0 +1,3 @@
+#!/bin/bash
+set -e
+Rscript -e 'install.packages(c("CFtime"), repos="https://cloud.r-project.org")'
