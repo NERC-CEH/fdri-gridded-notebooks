@@ -3,16 +3,13 @@
 <img width="309" height="57" alt="UKCEH and FDRI logos" src="https://github.com/user-attachments/assets/04afdc63-663f-41e4-b29d-9419f78d76c3" />
 </br>
 
-**Authors:** [Matt Dalle Piagge](https://mattjbr123.github.io/) and Kit Macleod. With help from: Matt Fry, Mike Brown, Anna Rose Klaptocz, Faiza Samreen, Matt Coole
+**Authors:** [Matt Dalle Piagge](https://mattjbr123.github.io/) and Kit Macleod. With help from: Matt Fry, Mike Brown, Anna Rose Klaptocz, Faiza Samreen, and Matt Coole.
+## Aims
+As part of the UK Government funded [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/) project, we are improving access to gridded time series datasets related to hydrological studies e.g. meteorological driving data for hydrological models. Our primary aim is to help a wide range of users access and use gridded time series datasets in NetCDF and object store (Zarr) formats using Python and R notebooks. As part of a series of user engagements we have learned that there is a need to help Python and R users explore and use large gridded datasets, and that users often lack the technical skills to do this. The notebooks in this repository are a starting point for improving gridded dataset accessibility. If you would like to learn more about the challenges and solutions related to accessing large gridded datasets (NetCDF and Zarr) then see [Learn more about NetCDF and Zarr data formats and why they are needed.](https://github.com/NERC-CEH/fdri-gridded-notebooks/tree/main#learn-more-netcdf-and-zarr-data-formats-and-why-they-are-needed)
 
-As part of the UK Government funded [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/) project, we are improving access to gridded time series datasets related to hydrological studies e.g. meteorological driving data for hydrological models. We are looking to help a wide range of users access and use gridded time series datasets in NetCDF and object store formats using Python and R notebooks.
-
-As part of a series of user engagements we are holding a two hour session in April 2026 to better understanding user needs for access to gridded time series data. The notebooks in this repository are a starting point for improving dataset accessibility. 
-
-As our work progresses we will add a range of ways that you can run these notebooks depending on your particular situation, expertise, and needs, according to user feedback. We intend to have a set of notebooks for each dataset released under the FDRI project. At the moment we are providing notebooks for [CEH-GEAR-1hr](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f), [HadUK-Grid](https://dx.doi.org/10.5285/f02cc6ddd92f45b18b9ab6ab544df7d9) Rainfall (both gridded rainfall datasets), and [Hydro-PE](https://doi.org/10.5285/2aa2c8ab-9e32-4b3b-9636-503912305aca) (a gridded potential evaporation product derived from observations).
+We aim to respond to the needs of users. At the moment we are providing notebooks for [CEH-GEAR-1hr](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f), [HadUK-Grid](https://dx.doi.org/10.5285/f02cc6ddd92f45b18b9ab6ab544df7d9) Rainfall (both gridded rainfall datasets), and [Hydro-PE](https://doi.org/10.5285/2aa2c8ab-9e32-4b3b-9636-503912305aca) (a gridded potential evaporation product derived from observations). We welcome feedback.
 
 # Getting started
-
 There are range of ways to run notebooks. Here we provide easy ways to get started with them using [Google Colab](https://developers.google.com/colab) or [Binder](https://mybinder.org/) with minimal setup required. Instructions are below, along with links to the notebooks. We also provide instructions for running these notebooks on your local machine, but this is much more complicated and only for advanced users.
 
 | Dataset | Python Notebook | R Notebook |
@@ -164,7 +161,7 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 </details>
 
 
-# Learn more NetCDF and Zarr data formats and why they are needed
+# Learn more about NetCDF and Zarr data formats and why they are needed
 <summary>
 Gridded time series data e.g. rainfall is important for a wide range of modelling and analysis tasks. NetCDF is a common format that many in the community are familiar with and has benefits of range of tools and software packages, built in metadata based on community standards, and community support. However, these gridded datasets are getting bigger and harder to work with, as users do not want to or cannot download whole datasets. Zarr is a format designed for storage on cloud object storage and enables more efficient access to parts of large, gridded data. Here we introduce NetCDF and Zarr data formats and explain why there are temporal and spatial Zarr versions optimised to support uses cases such as mapping, and grid and catchment area extraction
 </summary>
