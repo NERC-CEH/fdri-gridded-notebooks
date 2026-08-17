@@ -10,7 +10,9 @@ As part of the UK Government funded [Floods and Droughts Research Infrastructure
 We aim to respond to the needs of users. At the moment we are providing notebooks for [CEH-GEAR-1hr](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f), [HadUK-Grid](https://dx.doi.org/10.5285/f02cc6ddd92f45b18b9ab6ab544df7d9) Rainfall (both gridded rainfall datasets), and [Hydro-PE](https://doi.org/10.5285/2aa2c8ab-9e32-4b3b-9636-503912305aca) (a gridded potential evaporation product derived from observations). We welcome feedback.
 
 # Getting started
-There are range of ways to run notebooks. Here we provide easy ways to get started with them using [Google Colab](https://developers.google.com/colab) or [Binder](https://mybinder.org/) with minimal setup required. Instructions are below, along with links to the notebooks. We also provide instructions for running these notebooks on your local machine, but this is much more complicated and only for advanced users.
+Depending on the dataset you are interested in, the data format (NetCDF or Zarr) you want to use, and if you are a Python or R user will determine which notebook you first explore. If you would like to learn more about the datasets, then see the [Dataset]((https://github.com/NERC-CEH/fdri-gridded-notebooks/tree/main#datasets) section. If you are unsure if you should be using NetCDF or Zarr, then our section about NetCDF and Zarr should help you decide. If you are still unsure, then we suggest you use the Zarr versions as these can often be more efficient (in particular for Python users). If you are unsure if you should be using Python or R to explore and access gridded datasets using our notebooks, then we recommend you use Python as the packages at least for Zarr are easier to use. 
+
+To help you get started with these notebooks, we have provided two of the most common ways of opening and running notebooks online. If you would like to learn more about options, then see our Running notebook section. There are a range of ways to run notebooks. Here we provide easy ways to get started with them using [Google Colab](https://developers.google.com/colab) or [Binder](https://mybinder.org/) with minimal setup required. Instructions are below, along with links to the notebooks. We also provide instructions for running these notebooks on your local machine, but this is much more complicated and only for advanced users.
 
 | Dataset | Python Notebook | R Notebook |
 | ------- | --------------- | ---------- |
@@ -163,22 +165,32 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 
 # Learn more about NetCDF and Zarr data formats and why they are needed
 <summary>
-Gridded time series data e.g. rainfall is important for a wide range of modelling and analysis tasks. NetCDF is a common format that many in the community are familiar with and has benefits of range of tools and software packages, built in metadata based on community standards, and community support. However, these gridded datasets are getting bigger and harder to work with, as users do not want to or cannot download whole datasets. Zarr is a format designed for storage on cloud object storage and enables more efficient access to parts of large, gridded data. Here we introduce NetCDF and Zarr data formats and explain why there are temporal and spatial Zarr versions optimised to support uses cases such as mapping, and grid and catchment area extraction
+Gridded time series data e.g. rainfall is important for a wide range of modelling and analysis tasks. NetCDF is a common format that many in the community are familiar with and has benefits of range of tools and software packages, built in metadata based on community standards, and community support. However, these gridded datasets are getting bigger and harder to work with, as users do not want to or cannot download whole datasets. Zarr is a format designed for storage on cloud object storage and enables more efficient access to parts of large, gridded data. Here we introduce NetCDF and Zarr data formats and explain why there are temporal and spatial Zarr versions optimised to support uses cases such as mapping, and grid and catchment area extraction.
 </summary>
 
 
 <details>
 
-## NetDF
+## NetCDF
+Traditionally these gridded time series datasets have been provided in NetCDF format (Network Common Data Form). NetCDF is a self-describing binary data format and associated software tools for creating, sharing, and accessing array-oriented scientific data1. Active development of the CF Metadata Conventions (Climate and Forecasting) support NetCDF files through defining metadata that provides a definite description of what the data in each variable represents, and the spatial and temporal properties of the data.
+Conventionally, these files are structured as a series of two-dimensional arrays for each timestep, often with separate files for a given period of time (e.g. month or year) which means they are optimised for rapid access to all data for that given period of time. However, many hydrological use cases for this data, e.g. extraction of a long time-series for a given location or catchment do not suit this optimisation, as data must be extracted from multiple files.
+An example of a gridded meteorological dataset is HadUK-Grid, it is produced annually at 1 km x 1 km grid resolution based on the Ordnance Survey’s National Grid. The dataset is provided, as NetCDF files, at several spatial (1, 5, 12, 25, and 60 km) and temporal resolutions (daily, monthly, seasonal, and annual) to support a range of use cases.
 
 ## Zarr
-  
-•	Explain there is a temporal and spatial version optimised to support uses cases such as mapping, and grid and catchment area extraction:
+Over the past 10 years there has been development and increasing use of a new data format, Zarr3, that overcomes some of the limitations of single-file formats like NetCDF. The Zarr data specification sets out storing chunked, compressed, N-dimensional arrays designed for cloud-native, high-performance computing. In this way, Zarr enables these large datasets to be structured to optimise access for specific use cases, and for data to be directly accessible over the web. Our previous work investigated how Zarr-based data can be optimised for a wider range of use cases. Increasingly meteorological and geospatial data are available in Zarr format. The recent rise of Zarr formatted data is due to widespread provision of cloud-based object storage for storing large datasets, and development of key packages for accessing cloud-based data in the Python community (such as Zarr-Python and Xarray). In the R community, there is less support, with the recent Zarr package providing initial Zarr access since the end of 2025.
+
+
+## Explanation why there are temporal and spatial versions optimised to support uses cases such as mapping, and grid and catchment area extraction
 Data in the Zarr format is split up into pieces or “chunks”. Only the chunks that are needed for a particular analysis or visualisation are fetched. The chunks are fetched in parallel (i.e. many chunks fetched at the same time), and this is where the speedup over NetCDF for large datasets is derived from. However, the need to “chunk” the dataset means choices have to be made about how to do this: which dimensions to chunk over and how big to make the chunks as these both have a big impact on the speed of an analysis, and vary depending on what analysis is being done. This has led to the practice of providing the data in two versions, chunked along opposite dimensions to provide optimum performance for opposite analyses types. 
 
 The two idealised opposing analysis types are “time series at a grid point” and “map at a time point” for which chunking across the spatial dimensions (“spaghetti” chunking) and time dimension (“lasagne” chunking) respectively provides significant improvements in performance by minimizing the amount of unnecessary data that is fetched. It is easiest to understand this when looking at a diagram:
- 
 
+</details>
+ 
+# Datasets
+<summary>
+  
+</summary>
 
   
 </details>
