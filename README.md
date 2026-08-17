@@ -164,5 +164,25 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 </details>
 
 
+# Learn more NetCDF and Zarr data formats and why they are needed
+<summary>
+Gridded time series data e.g. rainfall is important for a wide range of modelling and analysis tasks. NetCDF is a common format that many in the community are familiar with and has benefits of range of tools and software packages, built in metadata based on community standards, and community support. However, these gridded datasets are getting bigger and harder to work with, as users do not want to or cannot download whole datasets. Zarr is a format designed for storage on cloud object storage and enables more efficient access to parts of large, gridded data. Here we introduce NetCDF and Zarr data formats and explain why there are temporal and spatial Zarr versions optimised to support uses cases such as mapping, and grid and catchment area extraction
+</summary>
 
+
+<details>
+
+## NetDF
+
+## Zarr
+  
+•	Explain there is a temporal and spatial version optimised to support uses cases such as mapping, and grid and catchment area extraction:
+Data in the Zarr format is split up into pieces or “chunks”. Only the chunks that are needed for a particular analysis or visualisation are fetched. The chunks are fetched in parallel (i.e. many chunks fetched at the same time), and this is where the speedup over NetCDF for large datasets is derived from. However, the need to “chunk” the dataset means choices have to be made about how to do this: which dimensions to chunk over and how big to make the chunks as these both have a big impact on the speed of an analysis, and vary depending on what analysis is being done. This has led to the practice of providing the data in two versions, chunked along opposite dimensions to provide optimum performance for opposite analyses types. 
+
+The two idealised opposing analysis types are “time series at a grid point” and “map at a time point” for which chunking across the spatial dimensions (“spaghetti” chunking) and time dimension (“lasagne” chunking) respectively provides significant improvements in performance by minimizing the amount of unnecessary data that is fetched. It is easiest to understand this when looking at a diagram:
+ 
+
+
+  
+</details>
 
