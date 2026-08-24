@@ -18,7 +18,7 @@ To help you get started with these notebooks, we have provided links below for r
 
 Table 1. Links to Python and R notebooks
 
-| Dataset | Python Notebook | Run notebook | R Notebook | Run notebook |
+| Dataset | Python notebook | Run notebook | R notebook | Run notebook |
 | ------- | --------------- | ----- | ---------- | ----- |
 | CEH-GEAR-1hr (Zarr version) | [gear_zarr_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_zarr_python.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_zarr_python.ipynb)   | [gear_zarr_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_zarr_R.ipynb) |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_zarr_R.ipynb) |
 | CEH-GEAR-1hr (NetCDF version) | [gear_netcdf_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_netcdf_python.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_netcdf_python.ipynb)| [gear_netcdf_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_netcdf_R.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/CEH-GEAR-1hr/gear_netcdf_R.ipynb) |
@@ -27,40 +27,58 @@ Table 1. Links to Python and R notebooks
 | Hydro-PE (Zarr version) | [hydrope_zarr_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_zarr_python.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_zarr_python.ipynb) | [hydrope_zarr_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_zarr_R.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_zarr_R.ipynb) |
 | Hydro-PE (NetCDF version) | [hydrope_netcdf_python.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_netcdf_python.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_netcdf_python.ipynb) | [hydrope_netcdf_R.ipynb](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_netcdf_R.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NERC-CEH/fdri-gridded-notebooks/blob/main/notebooks/Hydro-PE/hydrope_netcdf_R.ipynb) |
 
-## Python
+## Python and R notebook instructions
 
-### Google Colab
-**Google Account required**
-- Click the "Launch in Colab" button at the top of the notebook.
-- Sign in to your google account if needed (blue "Sign in" button in the top right)
-- Each notebook includes a cell near the top for installing extra packages not available in the default Colab environment. Run it to install these.
+### Using Google Colab
+**A [Google Account](https://www.google.com/intl/en-GB/account/about/) is required:**
+- Click "Launch in Colab" button above or at the top of each notebook.
+- Sign in to your Google account if needed (blue "Sign in" button in the top right).
+- If you are new to Colab, then see this [Introductory Colab](https://colab.research.google.com/notebooks/intro.ipynb) notebook.
+- For Python notebooks, you can use the standard Runtime.
+- For R notebooks, click the "Runtime" menu in the menu bar at the top of the screen, select Change runtime type, select R from the 'Runtime type' drop down box
+- Each notebook includes a cell near the top for installing extra packages not available in the default Colab environment; run it to install these.
 
-**Note:** Changes you make to the notebook will not be saved by default. If you wish to save your changes, click the "Copy to Drive" text just below the menu bar at the top of the screen. This will create a separate copy of the notebook in your Google Drive and any edits you make will be saved to it.
+**Note:** Changes you make to the notebooks will not be saved by default. If you want to save your changes, click the "Copy to Drive" text just below the menu bar at the top of the screen. This will create a separate copy of the notebook in your Google Drive and any edits you make will be saved to it.
 
-### Binder
-Click the "Launch Binder" button at the top of the notebook. Please note that it may take several minutes to load the environment. After the environment has loaded the notebook will appear and you will be able to run it. 
+
+### Using Binder
+Click the "Launch Binder" button at the top of each notebook. Please note that it may take several minutes to load the Python environment, and about 30 minutes to load the R environment. After the environment has loaded the notebook will appear and you will be able to run it. 
 
 **Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
 
-### JASMIN Notebook Service
-[JASMIN](https://www.jasmin.ac.uk/about/) is a computing and data storage resource and environment for NERC researchers. If you have an account, you can make use of their own notebook service to run these notebooks. We are working on simplifying the setup, as it is a little more complicated than using Google Colab or Binder at present. For now, instructions are provided below and on the [JASMIN documentation website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). As JASMIN is also where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times as where you are running the notebooks is physically closer to where the data is stored. 
 
-- You will need to [apply for access to the FDRI Group Workspace](https://accounts.jasmin.ac.uk/services/group_workspaces/fdri/) to be able to use the pre-installed environment for running the notebooks
-- Once access has been granted, open up the [JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/)
-- Obtain a copy of the notebooks by clicking the 'Git' in the menu bar at the top of the webpage, then 'Clone a Repository'. Tick the 'Download the repository' button, and paste in the link to the repository: https://github.com/NERC-CEH/fdri-gridded-notebooks.git (this can also be obtained by clicking the big green '<> Code' button on the repository main page, clicking 'HTTPS' and copying the link shown).
-- The environment for running the notebooks is pre-installed but a couple of steps are required to enable it for running notebooks the first time you use the Notebook Service:
+### Using JASMIN Notebook Service
+[JASMIN](https://www.jasmin.ac.uk/about/) is a computing and data storage resource and environment for UK NERC researchers. If you have an account, you can use their Notebook Service to run these notebooks. As JASMIN is where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times. And JASMIN provides more computing resources for a notebook user compared to the free Colab tier.
+
+We are working on simplifying the setup, as it is more complicated than using Google Colab or Binder at present. Instructions are provided below and on the [JASMIN documentation website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). 
+
+- You will need to [apply for access to the FDRI Group Workspace](https://accounts.jasmin.ac.uk/services/group_workspaces/fdri/) to be able to use the pre-installed environment for running the notebooks.
+- Once access has been granted, open up the [JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/).
+- Obtain a copy of the notebooks by clicking the 'Git' in the menu bar at the top of the webpage, then 'Clone a Repository'. Tick the 'Download the repository' button, and paste in the link to the repository: https://github.com/NERC-CEH/fdri-gridded-notebooks.git (this can also be obtained by clicking the big green '<> Code' button on the Github repository main page, clicking 'HTTPS' and copying the link shown).
+
+The environment for running the notebooks is pre-installed but a couple of steps are required to enable it for running notebooks the first time you use the Notebook Service.
+
+**Python notebooks:**
 - Open up a terminal and run ```conda activate /gws/ssde/j25b/fdri/envs/fdricombo``` to activate the environment, then
 - ```python -m ipykernel install --user --name fdricombo``` to install the 'kernel' (the Python executable) to your local user area
-- After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel (called fdricombo) by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and selecting 'fdricombo' from the menu that appears. Note that it may take a few minutes to show up when first installing the kernel. 
+- After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel (called fdricombo) by clicking the text next to the small empty circle on the top right of the notebook, that says 'No Kernel' or 'Python' or similar, and selecting 'fdricombo' from the menu that appears. Note that it may take a few minutes to show up when first installing the kernel. 
 - Next time you want to run the notebook (or any Python notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
+ 
+**R notebooks:**
+- Open up a terminal and run ```conda activate /gws/ssde/j25b/fdri/envs/fdricomboR``` to activate the environment, then
+- ```python -m ipykernel install --user --name fdricomboR``` to install the 'kernel' (the R executable) to your local user area
+- After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel (called fdricomboR) by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and selecting 'fdricomboR' from the menu that appears. Note that it may take a few minutes to show up when first installing the kernel. 
+- Next time you want to run the notebook (or any R notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
 
 
 <details>
 <summary>
   
-### Local Machine
+###  Using your local machine
 You can also run these notebooks on your local machine (laptop or desktop) but this is much more involved, and only recommended for advanced users. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. Two methods for running the notebooks are outlined below (click to expand) but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
 </summary>  
+
+### Python
 You will most likely require Admin/Superuser/root permissions, depending on what is already installed on your machine. You may also run into memory issues if your machine doesn't have enough RAM.
 
 #### The Graphical Point-and-Click option: Using VS-Code
@@ -90,40 +108,9 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 - Create a Python virtual environment in which to install the packages required by the notebooks with ```uv venv```
 - Activate the virtual environment with ```.venv\Scripts\Activate``` (Windows) ```source .venv/bin/activate``` (Linux)
 - Install the required packages with ```uv pip install -r requirements.txt```
-- Run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web browser. 
-</details>
+- Run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web browser.
 
-## R
-
-### Google Colab
-
-**Google Account required**
-- Click the "Launch in Colab" button at the top of the notebook.
-- Sign in to your google account if needed (blue "Sign in" button in the top right)
-- Click the "Runtime" menu in the menu bar at the top of the screen, select Change runtime type, select R from the 'Runtime type' drop down box
-- Each notebook includes a couple of cells near the top for installing extra packages not available in the default Colab environment. Run these to install them but note that it will take at least 10 minutes due to limited compute on the free tier of Colab.
-
-**Note:** Changes you make to the notebook will not be saved by default. If you wish to save your changes, click the "Copy to Drive" text just below the menu bar at the top of the screen. This will create a separate copy of the notebook in your Google Drive and any edits you make will be saved to it.
-
-### Binder
-Click the "Launch Binder" button at the top of the notebook. Please note that it may up to half an hour to load the environment, but does not require any further package installs once loaded. After the environment has loaded the notebook will appear and you will be able to run it. 
-
-**Note:** Changes you make to the notebook will not be saved. There is no easy way to save edits you make when using the Binder service.
-
-### JASMIN Notebook Service
-[JASMIN](https://www.jasmin.ac.uk/about/) is a computing and data storage resource and environment for NERC researchers. If you have an account, you can make use of their own notebook service to run these notebooks. We are working on simplifying the setup, as it is a little more complicated than using Google Colab or Binder at present. For now, instructions are provided below, with further advice on the [JASMIN documentation website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). As JASMIN is also where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times as where you are running the notebooks is physically closer to where the data is stored. 
-
-- You will need to [apply for access to the FDRI Group Workspace](https://accounts.jasmin.ac.uk/services/group_workspaces/fdri/) to be able to use the pre-installed environment for running the notebooks
-- Once access has been granted, open up the [JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/)
-- Obtain a copy of the notebooks by clicking the 'Git' in the menu bar at the top of the webpage, then 'Clone a Repository'. Tick the 'Download the repository' button, and paste in the link to the repository: https://github.com/NERC-CEH/fdri-gridded-notebooks.git (this can also be obtained by clicking the big green '<> Code' button on the repository main page, clicking 'HTTPS' and copying the link shown).
-- Open up a terminal and run ```conda activate /gws/ssde/j25b/fdri/envs/fdricomboR``` to activate the environment, then
-- ```python -m ipykernel install --user --name fdricomboR``` to install the 'kernel' (the R executable) to your local user area
-- After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel (called fdricomboR) by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and selecting 'fdricomboR' from the menu that appears. Note that it may take a few minutes to show up when first installing the kernel. 
-- Next time you want to run the notebook (or any R notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
-
-<details>
-<summary>
-  
+### R
 ### Local Machine
 You can also run these notebooks on your local machine (laptop or desktop) but this is much more involved, and only recommended for advanced users. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. Two methods for running the notebooks are outlined below (click to expand) but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
 </summary>  
@@ -164,6 +151,8 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 
 
 **Note:** You may run in to issues installing the required packages in the Zarr version of the R notebooks on your local machine. The most likely issue is that some dependencies that cannot be installed through R are not present on your system. The dependencies for Linux are listed in the ['apt.txt'](https://github.com/NERC-CEH/fdri-gridded-notebooks/blob/main/apt.txt) file in the repository. Installing these (e.g. using ```apt-get install packagename``` may allow you to proceed. 
+
+
 </details>
 
 
