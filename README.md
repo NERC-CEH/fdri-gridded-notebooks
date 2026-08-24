@@ -14,7 +14,7 @@ We aim to respond to the needs of users. Currently we are providing notebooks fo
 # Getting started
 Depending on the dataset you are interested in, the data format (NetCDF or Zarr) you want to use, and if you are a Python or R user will determine which notebook you first explore. If you are unsure if you should be using NetCDF or Zarr, then our section about NetCDF and Zarr should help you decide. If you are still unsure, then we suggest you use the Zarr versions as these can often be more efficient (in particular for Python users). If you are unsure if you should be using Python or R to explore and access gridded datasets using our notebooks, then we recommend you use Python as the packages e.g. [Xarray](https://xarray.dev/), at least for Zarr, are easier to use.
 
-To help you get started with these notebooks, we have provided links below for running these using [Google Colab](https://developers.google.com/colab) (Table 1). On the individual notebooks there are also links for [Binder](https://mybinder.org/), in case you are unable to use Colab. During our April 2026 session with users, we learned that many of you are familiar with and use Colab. The initial start up times for Colab are measured in seconds whereas Binder can take several minutes, due to Binder needing to setup the notebooks and resources. Instructions are below, including for running these notebooks on your local machine - this is more complicated and only recommended for advanced users.
+To help you get started with these notebooks, we have provided links below for running these using [Google Colab](https://developers.google.com/colab) (Table 1). On the individual notebooks there are also links for [Binder](https://mybinder.org/), in case you are unable to use Colab. During our April 2026 session with users, we learned that many of you are familiar with and use Google's Colab notebook service (. The initial start up times for Colab are measured in seconds whereas Binder can take several minutes, due to Binder needing to setup the notebooks and resources. Instructions are below, including for running these notebooks on your local machine - this is more complicated and only recommended for advanced users.
 
 Table 1. Links to Python and R notebooks
 
@@ -156,10 +156,10 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 </details>
 
 
-# Learn more about NetCDF and Zarr data formats and why they are needed
-<summary>
-Gridded time series data e.g. rainfall is important for a wide range of modelling and analysis tasks. NetCDF is a common format that many in the community are familiar with and has benefits of range of tools and software packages, built in metadata based on community standards, and community support. However, these gridded datasets are getting bigger and harder to work with, as users do not want to or cannot download whole datasets. Zarr is a format designed for storage on cloud object storage and enables more efficient access to parts of large, gridded data. Here we introduce NetCDF and Zarr data formats and explain why there are temporal and spatial Zarr versions optimised to support uses cases such as mapping, and grid and catchment area extraction.
-</summary>
+## Learn more about NetCDF and Zarr data formats and why they are needed
+
+Gridded time series data e.g. rainfall is important for a wide range of modelling and analysis tasks. [NetCDF](https://docs.unidata.ucar.edu/nug/current/index.html) is a common format that many in the community are familiar with and has benefits of range of tools and software packages, built in metadata based on community standards, and community support. However, these gridded datasets are getting bigger and harder to work with, as users do not want to or cannot download whole datasets. [Zarr](https://zarr.dev/) is a format designed for storage on cloud object storage and enables more efficient access to parts of large, gridded data. Here we introduce NetCDF and Zarr data formats and explain why there are temporal and spatial Zarr versions optimised to support uses cases such as mapping, and grid and catchment area extraction.
+
 
 
 <details>
@@ -181,9 +181,8 @@ The two idealised opposing analysis types are “time series at a grid point” 
 </details>
  
 # Datasets
-<summary>
-  
-</summary>
+
+
 
   
 </details>
