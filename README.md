@@ -53,23 +53,24 @@ Click the "Launch Binder" button at the top of each notebook. Please note that i
 [JASMIN](https://www.jasmin.ac.uk/about/) is a computing and data storage resource and environment for UK NERC researchers. If you have an account, you can use their Notebook Service to run these notebooks. As JASMIN is where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times. And JASMIN provides more computing resources for a notebook user compared to the free Colab tier.
 
 <Details>
+ 
 We are working on simplifying the setup, as it is more complicated than using Google Colab or Binder at present. Instructions are provided below and on the [JASMIN documentation website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). 
 
 - You will need to [apply for access to the FDRI Group Workspace](https://accounts.jasmin.ac.uk/services/group_workspaces/fdri/) to be able to use the pre-installed environment for running the notebooks.
 - Once access has been granted, open up the [JASMIN Notebook Service](https://notebooks.jasmin.ac.uk/).
-- Obtain a copy of the notebooks by clicking the 'Git' in the menu bar at the top of the webpage, then 'Clone a Repository'. Tick the 'Download the repository' button, and paste in the link to the repository: https://github.com/NERC-CEH/fdri-gridded-notebooks.git (this can also be obtained by clicking the big green '<> Code' button on the Github repository main page, clicking 'HTTPS' and copying the link shown).
+- Obtain a copy of the notebooks by clicking the 'Git' in the menu bar at the top of the webpage, then 'Clone a Repository'. Tick the 'Download the repository' button, and paste in the [link to the repository](https://github.com/NERC-CEH/fdri-gridded-notebooks.git) (this can also be obtained by clicking the big green '<> Code' button on the Github repository main page, clicking 'HTTPS' and copying the link shown).
 
 The environment for running the notebooks is pre-installed but a couple of steps are required to enable it for running notebooks the first time you use the Notebook Service.
 
 **Python notebooks:**
-- Open up a terminal and run ```conda activate /gws/ssde/j25b/fdri/envs/fdricombo``` to activate the environment, then
-- ```python -m ipykernel install --user --name fdricombo``` to install the 'kernel' (the Python executable) to your local user area
+- Open up a terminal and run ```conda activate /gws/ssde/j25b/fdri/envs/fdricombo``` to activate the environment.
+- Run ```python -m ipykernel install --user --name fdricombo``` to install the 'kernel' (the Python executable) to your local user area.
 - After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel (called fdricombo) by clicking the text next to the small empty circle on the top right of the notebook, that says 'No Kernel' or 'Python' or similar, and selecting 'fdricombo' from the menu that appears. Note that it may take a few minutes to show up when first installing the kernel. 
 - Next time you want to run the notebook (or any Python notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
  
 **R notebooks:**
-- Open up a terminal and run ```conda activate /gws/ssde/j25b/fdri/envs/fdricomboR``` to activate the environment, then
-- ```python -m ipykernel install --user --name fdricomboR``` to install the 'kernel' (the R executable) to your local user area
+- Open up a terminal and run ```conda activate /gws/ssde/j25b/fdri/envs/fdricomboR``` to activate the environment.
+- Run ```python -m ipykernel install --user --name fdricomboR``` to install the 'kernel' (the R executable) to your local user area.
 - After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel (called fdricomboR) by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and selecting 'fdricomboR' from the menu that appears. Note that it may take a few minutes to show up when first installing the kernel. 
 - Next time you want to run the notebook (or any R notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
 </details>
@@ -78,7 +79,7 @@ The environment for running the notebooks is pre-installed but a couple of steps
 <summary>
   
 ###  Using your local machine
-You can also run these notebooks on your local machine (laptop or desktop) but this is much more involved, and only recommended for advanced users. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. Two methods for running the notebooks are outlined below (click to expand) but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. 
+You can also run these notebooks on your local machine (laptop or desktop) but this is much more involved, and only recommended for advanced users. They can be run on Windows, but Linux (or MacOS in a pinch) is preferred. Two methods for running the notebooks are outlined below (click to expand) but please note that your mileage may vary with these and we cannot provide support for issues you may encounter. We are exploring ways to make running the notebooks locally easier using JuyterLite and related technologies.
 </summary>  
 
 ### Python
@@ -89,28 +90,28 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 - Navigate to where the ZIP file downloaded and unzip them (right click, followed by "Extract All" or similar should do the job).
 - [Download and install VS-Code](https://code.visualstudio.com/) if it is not already installed on your machine. If you get 'Dependency is not satisfied'  errors installing the Linux version, a [potential solution is available](https://github.com/microsoft/vscode/issues/237378#issuecomment-3254132027).
 - [Download and install Python](https://www.python.org/downloads/) if you don't already have it on your machine. The "standalone installer" is recommended for Windows, and make sure you check the "Add Python to PATH" box during installation.
-- Open VS Code and go to the Extensions panel (Ctrl+Shift+X)
-- Search for and install "Python" if it is not already installed
-- Search for and install "Jupyter" if it is not already installed
-- Open the folder containing the notebooks that you downloaded and extracted earlier (File -> Open Folder, or Ctrl+K+O)
-- You'll need to "Trust the authors" if you get a notice about that when you open the folder
-- Select the notebook you want to run from the file explorer side panel on the left
-- Click 'Select Kernel' near the top right of the window, then '+ Create Python Environment' followed by 'Venv' in the menu that appears
-- Still in the same menu, select a Python interpreter. If you just installed Python following this guide, that should show up as the one option in the menu, otherwise you can use an existing/other python installation
-- Then finally you'll be asked to select dependencies to install. The requirements.txt file in the folder should show up as an option. Select this and press 'OK'. This will install the necessary python packages onto your system. It'll likely take a few minutes.
-- After this completes you should now be able to run and use the notebook 
+- Open VS Code and go to the Extensions panel (Ctrl+Shift+X).
+- Search for and install "Python" if it is not already installed.
+- Search for and install "Jupyter" if it is not already installed.
+- Open the folder containing the notebooks that you downloaded and extracted earlier (File -> Open Folder, or Ctrl+K+O).
+- You'll need to "Trust the authors" if you get a notice about that when you open the folder.
+- Select the notebook you want to run from the file explorer side panel on the left.
+- Click 'Select Kernel' near the top right of the window, then '+ Create Python Environment' followed by 'Venv' in the menu that appears.
+- Still in the same menu, select a Python interpreter. If you just installed Python following this guide, that should show up as the one option in the menu, otherwise you can use an existing/other Python installation.
+- Then finally you'll be asked to select dependencies to install. The requirements.txt file in the folder should show up as an option. Select this and press 'OK'. This will install the necessary Python packages onto your system. It'll likely take a few minutes.
+- After this completes you should now be able to run and use the notebook. 
 
 #### The Shell/Command-Line option: Using UV
 - This method assumes basic knowledge of bash/shell/command-lines. It works best with Linux or MacOS machines which have a built-in bash shell/terminal. The equivalent in Windows is the Command Line, but there are some differences.
 - If on Windows, [download and install Visual Studio Build Tools for C+](visualstudio.microsoft.com/visual-cpp-build-tools), selecting "Desktop Development with C++" when the installer shows up. 
-- Open a shell and navigate to the folder you would like to download the code to using the ```cd``` command
-- Obtain a copy of the code using ```curl -L https://github.com/NERC-CEH/fdri-gridded-notebooks/archive/refs/heads/main.zip --output fdri-notebooks.zip```
-- Extract the notebooks from the zip file with ```tar -xf fdri-notebooks.zip``` or ```unzip fdri-notebooks.zip``` and navigate into the extracted folder (```cd fdri-gridded-notebooks-main```)
-- [Install UV](docs.astral.sh/uv/getting-started/installation) following their instructions
-- If Python is not already installed on your system, install it using uv: ```uv python install```
-- Create a Python virtual environment in which to install the packages required by the notebooks with ```uv venv```
-- Activate the virtual environment with ```.venv\Scripts\Activate``` (Windows) ```source .venv/bin/activate``` (Linux)
-- Install the required packages with ```uv pip install -r requirements.txt```
+- Open a shell and navigate to the folder you would like to download the code to using the ```cd``` command.
+- Obtain a copy of the code using ```curl -L https://github.com/NERC-CEH/fdri-gridded-notebooks/archive/refs/heads/main.zip --output fdri-notebooks.zip```.
+- Extract the notebooks from the zip file with ```tar -xf fdri-notebooks.zip``` or ```unzip fdri-notebooks.zip``` and navigate into the extracted folder (```cd fdri-gridded-notebooks-main```).
+- [Install UV](docs.astral.sh/uv/getting-started/installation) following their instructions.
+- If Python is not already installed on your system, install it using uv: ```uv python install```.
+- Create a Python virtual environment in which to install the packages required by the notebooks with ```uv venv```.
+- Activate the virtual environment with ```.venv\Scripts\Activate``` (Windows) ```source .venv/bin/activate``` (Linux).
+- Install the required packages with ```uv pip install -r requirements.txt```.
 - Run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web browser.
 
 ### R
@@ -123,32 +124,32 @@ You will most likely require Admin/Superuser/root permissions, depending on what
 - Download the repository by clicking the green '\<\> Code' button, top right on the repository [main page](https://github.com/NERC-CEH/fdri-gridded-notebooks) and then selecting 'Download ZIP' at the bottom of the menu that appears.
 - Navigate to where the ZIP file downloaded and unzip them (right click, followed by "Extract All" or similar should do the job).
 - [Download and install VS-Code](https://code.visualstudio.com/) if it is not already installed on your machine. If you get 'Dependency is not satisfied'  errors installing the Linux version, a [potential solution is available](https://github.com/microsoft/vscode/issues/237378#issuecomment-3254132027).
-- [Download and install R](https://cran.r-project.org/) if you don't already have it on your machine
-- [Download and install miniforge](https://github.com/conda-forge/miniforge#install) (a Python distribution), making sure to tick the "Add installation to my PATH environment variable" and "Register Miniforge3 as my default Python 3.13" boxes when they appear in the installer (Windows), or type yes when asked to Proceed with initialization? [yes|no] (Linux/MacOS)
+- [Download and install R](https://cran.r-project.org/) if you don't already have it on your machine.
+- [Download and install miniforge](https://github.com/conda-forge/miniforge#install) (a Python distribution), making sure to tick the "Add installation to my PATH environment variable" and "Register Miniforge3 as my default Python 3.13" boxes when they appear in the installer (Windows), or type yes when asked to Proceed with initialization? [yes|no] (Linux/MacOS).
 - When installed, open the "Miniforge prompt" application (Windows) or a shell (Linux or MacOS) and type in the following command: ```conda install jupyter``` and press Enter to run it. This installs the Jupyter notebook software. 
-- Open VS Code and go to the Extensions panel (Ctrl+Shift+X)
-- Search for and install "R" if it is not already installed
-- Search for and install "Python" if it is not already installed
-- Search for and install "Jupyter" if it is not already installed
-- Open the folder containing the notebooks that you downloaded and extracted earlier (File -> Open Folder, or Ctrl+K+O)
-- You'll need to "Trust the authors" if you get a notice about that when you open the folder
-- Select the notebook you want to run from the file explorer side panel on the left
+- Open VS Code and go to the Extensions panel (Ctrl+Shift+X).
+- Search for and install "R" if it is not already installed.
+- Search for and install "Python" if it is not already installed.
+- Search for and install "Jupyter" if it is not already installed.
+- Open the folder containing the notebooks that you downloaded and extracted earlier (File -> Open Folder, or Ctrl+K+O).
+- You'll need to "Trust the authors" if you get a notice about that when you open the folder.
+- Select the notebook you want to run from the file explorer side panel on the left.
 - Click 'Select Kernel' near the top right of the window, then select the kernel called 'base' with miniforge3 showing in the path next to it. If you can't see it in the menu, try 'Select another kernel' --> 'Python Environments'
 - In the bottom right click the bit that says 'R: (not attached)'. This opens up an R terminal prompt.
-- Run the following two commands: ```install.packages('IRkernel')``` and ```IRkernel::installspec() ```, then restart VS Code
-- Now you can select an R kernel to run the notebook: Where 'Select Kernel' was should now say something like "base (Python...)". Click this, then 'Select another kernel' --> 'Jupyter kernel' --> 'R' in the menu that appears
-- After this completes you should now be able to run and use the notebook 
+- Run the following two commands: ```install.packages('IRkernel')``` and ```IRkernel::installspec() ```, then restart VS Code.
+- Now you can select an R kernel to run the notebook: Where 'Select Kernel' was should now say something like "base (Python...)". Click this, then 'Select another kernel' --> 'Jupyter kernel' --> 'R' in the menu that appears.
+- After this completes you should now be able to run and use the notebook. 
 
 #### The Shell/Command-Line option: Using UV
 - This method assumes basic knowledge of bash/shell/command-lines. It works best with Linux or MacOS machines which have a built-in bash shell/terminal. The equivalent in Windows is the Command Line, but there are some differences.
 - If on Windows, [download and install Visual Studio Build Tools for C+](visualstudio.microsoft.com/visual-cpp-build-tools), selecting "Desktop Development with C++" when the installer shows up.
-- [Download and install R](https://cran.r-project.org/bin/windows/base/) if you don't already have it on your machine
-- [Download and install miniforge](https://github.com/conda-forge/miniforge#install) (a Python distribution), making sure to tick the "Add installation to my PATH environment variable" and "Register Miniforge3 as my default Python 3.13" boxes when they appear in the installer (Windows), or type yes when asked to Proceed with initialization? [yes|no] (Linux/MacOS)
-- Open a shell and navigate to the folder you would like to download the code to using the ```cd``` command
-- Obtain a copy of the code using ```curl -L https://github.com/NERC-CEH/fdri-gridded-notebooks/archive/refs/heads/main.zip --output fdri-notebooks.zip```
-- Extract the notebooks from the zip file with ```tar -xf fdri-notebooks.zip``` or ```unzip fdri-notebooks.zip``` and navigate into the extracted folder (```cd fdri-gridded-notebooks-main```)
-- Run the command ```conda install jupyter``` to install the notebook software
-- Open R, and run ```install.packages('IRkernel')``` and ```IRkernel::installspec()```
+- [Download and install R](https://cran.r-project.org/bin/windows/base/) if you don't already have it on your machine.
+- [Download and install miniforge](https://github.com/conda-forge/miniforge#install) (a Python distribution), making sure to tick the "Add installation to my PATH environment variable" and "Register Miniforge3 as my default Python 3.13" boxes when they appear in the installer (Windows), or type yes when asked to Proceed with initialization? [yes|no] (Linux/MacOS).
+- Open a shell and navigate to the folder you would like to download the code to using the ```cd``` command.
+- Obtain a copy of the code using ```curl -L https://github.com/NERC-CEH/fdri-gridded-notebooks/archive/refs/heads/main.zip --output fdri-notebooks.zip```.
+- Extract the notebooks from the zip file with ```tar -xf fdri-notebooks.zip``` or ```unzip fdri-notebooks.zip``` and navigate into the extracted folder (```cd fdri-gridded-notebooks-main```).
+- Run the command ```conda install jupyter``` to install the notebook software.
+- Open R, and run ```install.packages('IRkernel')``` and ```IRkernel::installspec()```.
 - Back in the shell, run the notebook you wish to use with ```jupyter-notebook name_of_notebook.ipynb```, e.g. ```jupyter-notebook gear_zarr_python.ipynb```. This should launch a web-browser with the notebook open in it, from which you can run and edit the notebook to your heart's content. If a web-browser does not open automatically, you can find the notebook page by going to http://localhost:8888 in your web browser.
 - It should open with an R kernel automatically. Check that it says 'R' next to an unfilled circle near the top right. If it says Python or something else, click on it and select 'R' from the menu box that appears.
 
