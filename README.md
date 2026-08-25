@@ -191,7 +191,7 @@ Table 2 contains information and links to the gridded datasets we have initially
 Table 2. Gridded datasets
 | Dataset | Temporal resolution | Temporal span | Spatial resolution (km) | Licence | Link and dataset citation |
 | ------- | :-----------------: | :-----------: | :---------------------: | :-----: | ---- |
-| CEH-GEAR | Hourly | 1990-2016 | 1 | [OGL](https://eidc.ac.uk/licences/ogl/plain) | [EIDC](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f) |
+| CEH-GEAR1hr | Hourly | 1990-2016 | 1 | [OGL](https://eidc.ac.uk/licences/ogl/plain) | [EIDC](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f) |
 | HadUK-grid Rainfall | Daily | 1836-2023* |  1 | [OGL](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) |[CEDA](https://catalogue.ceda.ac.uk/uuid/b963ead70580451aa7455782224479d5/) |
 | Hydro-PE | Daily | 1969-2024 | 1 | [OGL](https://eidc.ac.uk/licences/ogl/plain) | [EIDC](https://catalogue.ceh.ac.uk/documents/2aa2c8ab-9e32-4b3b-9636-503912305aca) |
 
