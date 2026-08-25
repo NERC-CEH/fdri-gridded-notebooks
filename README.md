@@ -37,7 +37,7 @@ Table 1. Links to Python and R notebooks
 - Sign in to your Google account if needed (blue "Sign in" button in the top right).
 - If you are new to Colab, then see this [Introductory Colab](https://colab.research.google.com/notebooks/intro.ipynb) notebook.
 - For Python notebooks, you can use the standard Runtime.
-- For R notebooks, click the "Runtime" menu in the menu bar at the top of the screen, select Change runtime type, select R from the 'Runtime type' drop down box
+- For R notebooks, click the "Runtime" menu in the menu bar at the top of the screen, select Change runtime type, select R from the 'Runtime type' drop down box.
 - Each notebook includes a cell near the top for installing extra packages not available in the default Colab environment; run it to install these.
 
 **Note:** Changes you make to the notebooks will not be saved by default. If you want to save your changes, click the "Copy to Drive" text just below the menu bar at the top of the screen. This will create a separate copy of the notebook in your Google Drive and any edits you make will be saved to it.
