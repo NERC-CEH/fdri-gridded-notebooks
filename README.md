@@ -52,6 +52,7 @@ Click the "Launch Binder" button at the top of each notebook. Please note that i
 ### Using JASMIN Notebook Service
 [JASMIN](https://www.jasmin.ac.uk/about/) is a computing and data storage resource and environment for UK NERC researchers. If you have an account, you can use their Notebook Service to run these notebooks. As JASMIN is where the datasets are stored, running notebooks from JASMIN has the advantage of faster data access times. And JASMIN provides more computing resources for a notebook user compared to the free Colab tier.
 
+<Details>
 We are working on simplifying the setup, as it is more complicated than using Google Colab or Binder at present. Instructions are provided below and on the [JASMIN documentation website](https://help.jasmin.ac.uk/docs/interactive-computing/jasmin-notebooks-service/). 
 
 - You will need to [apply for access to the FDRI Group Workspace](https://accounts.jasmin.ac.uk/services/group_workspaces/fdri/) to be able to use the pre-installed environment for running the notebooks.
@@ -71,7 +72,7 @@ The environment for running the notebooks is pre-installed but a couple of steps
 - ```python -m ipykernel install --user --name fdricomboR``` to install the 'kernel' (the R executable) to your local user area
 - After, you can load the notebook you wish to run from the files panel on the left, selecting the just-installed kernel (called fdricomboR) by clicking the text next to the small empty circle top right of the notebook, that says 'No Kernel' or 'Python' or similar, and selecting 'fdricomboR' from the menu that appears. Note that it may take a few minutes to show up when first installing the kernel. 
 - Next time you want to run the notebook (or any R notebook), you can just revisit the JASMIN notebook service, load the notebook, and it should pick up the environment with all the installed packages in it automatically.
-
+</details>
 
 <details>
 <summary>
