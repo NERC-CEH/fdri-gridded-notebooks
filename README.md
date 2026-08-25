@@ -181,6 +181,8 @@ Data in the Zarr format is split up into pieces or “chunks”. Only the chunks
 
 The two idealised opposing analysis types are “time series at a grid point” and “map at a time point” for which chunking across the spatial dimensions (“spaghetti” chunking) and time dimension (“lasagne” chunking) respectively provides significant improvements in performance by minimizing the amount of unnecessary data that is fetched. 
 
+See our earlier [Object Store tutorial](https://github.com/NERC-CEH/object_store_tutorial/blob/main/README.md) that goes into greater details about object store and chunking. There are many excellent community resources on these file formats including the [Cloud-Optimized Geospatial Formats Guide](https://guide.cloudnativegeo.org/).
+
 </details>
  
 ## Datasets
