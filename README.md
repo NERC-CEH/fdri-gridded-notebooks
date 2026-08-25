@@ -11,6 +11,8 @@ As part of a series of user engagements we have learned that there is a need to 
 
 We aim to respond to the needs of users. Currently we are providing notebooks for [CEH-GEAR-1hr](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f), [HadUK-Grid](https://dx.doi.org/10.5285/f02cc6ddd92f45b18b9ab6ab544df7d9) Rainfall (both gridded rainfall datasets), and [Hydro-PE](https://doi.org/10.5285/2aa2c8ab-9e32-4b3b-9636-503912305aca) (a gridded potential evaporation product derived from observations). See the [Datasets](https://github.com/NERC-CEH/fdri-gridded-notebooks/tree/main#datasets) section, to learn more about these. We welcome [feedback](https://digital-platform.fdri.org.uk/feedback).
 
+These notebooks are part of the [FDRI Digital Platform](https://digital-platform.fdri.org.uk/). 
+
 ## Getting started
 Depending on the dataset you are interested in, the data format (NetCDF or Zarr) you want to use, and if you are a Python or R user will determine which notebook you first explore. If you are unsure if you should be using NetCDF or Zarr, then our section about NetCDF and Zarr should help you decide. If you are still unsure, then we suggest you use the Zarr versions as these can often be more efficient (in particular for Python users). If you are unsure if you should be using Python or R to explore and access gridded datasets using our notebooks, then we recommend you use Python as the packages e.g. [Xarray](https://xarray.dev/), at least for Zarr, are easier to use.
 
