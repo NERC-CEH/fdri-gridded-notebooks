@@ -186,16 +186,16 @@ See our earlier [Object Store tutorial](https://github.com/NERC-CEH/object_store
 </details>
  
 ## Datasets
-Table 2 contains information and links to the gridded datasets we have initially focussed on. Based on feedback we will increase the number of datasets we include.
+Table 2 contains information and links to the gridded datasets we have initially focussed on. Based on feedback we will increase the number of datasets we include. Links to the Zarr stores for the temporal (Zarr-10km) and spatial chunk versions (Zarr-daily) are provided (Table 2). **Note:** these are links to the stores which are collections of objects; see the individual notebooks for additional details.
 
 Table 2. Gridded datasets
-| Dataset | Temporal resolution | Temporal span | Spatial resolution (km) | Licence | Link and dataset citation |
-| ------- | :-----------------: | :-----------: | :---------------------: | :-----: | ---- |
-| CEH-GEAR1hr | Hourly | 1990-2016 | 1 | [OGL](https://eidc.ac.uk/licences/ogl/plain) | [EIDC](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f) |
-| HadUK-grid Rainfall | Daily | 1836-2023* |  1 | [OGL](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) |[CEDA](https://catalogue.ceda.ac.uk/uuid/b963ead70580451aa7455782224479d5/) |
-| Hydro-PE | Daily | 1969-2024 | 1 | [OGL](https://eidc.ac.uk/licences/ogl/plain) | [EIDC](https://catalogue.ceh.ac.uk/documents/2aa2c8ab-9e32-4b3b-9636-503912305aca) |
+| Dataset | Temporal resolution | Temporal span | Spatial resolution (km) | Zarr-10km | Zarr-daily | Licence | Link and dataset citation |
+| ------- | :-----------------: | :-----------: | :---------------------: | :-------: | :--------: | :-----: | :-----------------------: | 
+| CEH-GEAR1hr | Hourly | 1990-2016 | 1 | [Zarr store](https://fdri-o.s3-ext.jc.rl.ac.uk/gearhrly-spacechunk/gearhrly_10km_chunks_all.zarr) | [Zarr store](https://fdri-o.s3-ext.jc.rl.ac.uk/gearhrly-timechunk/gearhrly_daily_chunks_all.zarr) | [OGL](https://eidc.ac.uk/licences/ogl/plain) | [EIDC](https://catalogue.ceh.ac.uk/documents/fc9423d6-3d54-467f-bb2b-fc7357a3941f) |
+| HadUK-grid Rainfall | Daily | 1836-2023* |  1 | [Zarr store](https://fdri-o.s3-ext.jc.rl.ac.uk/hadukgrid-rainfall-spacechunk/hadukgrid_rainfall_10km_chunks_all.zarr) | [Zarr store](https://fdri-o.s3-ext.jc.rl.ac.uk/hadukgrid-rainfall-timechunk/hadukgrid_rainfall_week_chunks_all.zarr) | [OGL](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) |[CEDA](https://catalogue.ceda.ac.uk/uuid/b963ead70580451aa7455782224479d5/) |
+| Hydro-PE | Daily | 1969-2024 | 1 | [Zarr store](https://fdri-o.s3-ext.jc.rl.ac.uk/hydro-pe-spacechunk/hydro-pe_10km_chunks_all.zarr) | [Zarr store](https://fdri-o.s3-ext.jc.rl.ac.uk/hydro-pe-timechunk/hydro-pe_week_chunks.zarr)  | [OGL](https://eidc.ac.uk/licences/ogl/plain) | [EIDC](https://catalogue.ceh.ac.uk/documents/2aa2c8ab-9e32-4b3b-9636-503912305aca) |
 
-*updates are available.
+*updates to the NetCDF versions are available from the MetOffice.
 
   
 
